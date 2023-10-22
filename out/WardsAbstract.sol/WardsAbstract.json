@@ -1,0 +1,408 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "deny",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "rely",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "wards",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "deny(address)": "9c52a7f1",
+    "rely(address)": "65fae35e",
+    "wards(address)": "bf353dbb"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"deny\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"rely\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"wards\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/dss-test/lib/dss-interfaces/src/utils/WardsAbstract.sol\":\"WardsAbstract\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":dss-allocator/=lib/dss-allocator/\",\":dss-interfaces/=lib/dss-test/lib/dss-interfaces/src/\",\":dss-test/=lib/dss-test/src/\",\":forge-std/=lib/forge-std/src/\",\":mock-erc20/=lib/mock-erc20/\",\":upgradeable-proxy/=lib/upgradeable-proxy/src/\"]},\"sources\":{\"lib/dss-test/lib/dss-interfaces/src/utils/WardsAbstract.sol\":{\"keccak256\":\"0x4d2ea711ac30953f0c42514625230cac4e30b0426f0871be5b9730d29d17c177\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://6449afad7b92c642e981333df7fdf706684d242b2f7695047ec6766c783f25ae\",\"dweb:/ipfs/QmPTf9oJ3T8BshFKWHmgLp7oqc17QtLzqu55QjV6RpRVFc\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.20+commit.a1b79de6"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "deny"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "rely"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "wards",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":dss-allocator/=lib/dss-allocator/",
+        ":dss-interfaces/=lib/dss-test/lib/dss-interfaces/src/",
+        ":dss-test/=lib/dss-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":mock-erc20/=lib/mock-erc20/",
+        ":upgradeable-proxy/=lib/upgradeable-proxy/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "lib/dss-test/lib/dss-interfaces/src/utils/WardsAbstract.sol": "WardsAbstract"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/dss-test/lib/dss-interfaces/src/utils/WardsAbstract.sol": {
+        "keccak256": "0x4d2ea711ac30953f0c42514625230cac4e30b0426f0871be5b9730d29d17c177",
+        "urls": [
+          "bzz-raw://6449afad7b92c642e981333df7fdf706684d242b2f7695047ec6766c783f25ae",
+          "dweb:/ipfs/QmPTf9oJ3T8BshFKWHmgLp7oqc17QtLzqu55QjV6RpRVFc"
+        ],
+        "license": "AGPL-3.0-or-later"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "lib/dss-test/lib/dss-interfaces/src/utils/WardsAbstract.sol",
+    "id": 7175,
+    "exportedSymbols": {
+      "WardsAbstract": [
+        7174
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "46:190:68",
+    "nodes": [
+      {
+        "id": 7156,
+        "nodeType": "PragmaDirective",
+        "src": "46:25:68",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.5",
+          ".12"
+        ]
+      },
+      {
+        "id": 7174,
+        "nodeType": "ContractDefinition",
+        "src": "73:162:68",
+        "nodes": [
+          {
+            "id": 7163,
+            "nodeType": "FunctionDefinition",
+            "src": "103:56:68",
+            "nodes": [],
+            "functionSelector": "bf353dbb",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "wards",
+            "nameLocation": "112:5:68",
+            "parameters": {
+              "id": 7159,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7158,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7163,
+                  "src": "118:7:68",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7157,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "118:7:68",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "117:9:68"
+            },
+            "returnParameters": {
+              "id": 7162,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7161,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7163,
+                  "src": "150:7:68",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7160,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "150:7:68",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "149:9:68"
+            },
+            "scope": 7174,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 7168,
+            "nodeType": "FunctionDefinition",
+            "src": "164:32:68",
+            "nodes": [],
+            "functionSelector": "65fae35e",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "rely",
+            "nameLocation": "173:4:68",
+            "parameters": {
+              "id": 7166,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7165,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7168,
+                  "src": "178:7:68",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7164,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "178:7:68",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "177:9:68"
+            },
+            "returnParameters": {
+              "id": 7167,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "195:0:68"
+            },
+            "scope": 7174,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 7173,
+            "nodeType": "FunctionDefinition",
+            "src": "201:32:68",
+            "nodes": [],
+            "functionSelector": "9c52a7f1",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "deny",
+            "nameLocation": "210:4:68",
+            "parameters": {
+              "id": 7171,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7170,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7173,
+                  "src": "215:7:68",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7169,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "215:7:68",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "214:9:68"
+            },
+            "returnParameters": {
+              "id": 7172,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "232:0:68"
+            },
+            "scope": 7174,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "WardsAbstract",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          7174
+        ],
+        "name": "WardsAbstract",
+        "nameLocation": "83:13:68",
+        "scope": 7175,
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "license": "AGPL-3.0-or-later"
+  },
+  "id": 68
+}

@@ -1,0 +1,493 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "cast",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "data",
+      "outputs": [
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "done",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "mana",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "whom",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "cast()": "96d373e5",
+    "data()": "73d4a13a",
+    "done()": "ae8421e1",
+    "mana()": "bdb001a7",
+    "whom()": "c5c0db08"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"cast\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"data\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"done\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"mana\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"whom\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/dss-test/lib/dss-interfaces/src/dapp/DSSpellAbstract.sol\":\"DSSpellAbstract\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":dss-allocator/=lib/dss-allocator/\",\":dss-interfaces/=lib/dss-test/lib/dss-interfaces/src/\",\":dss-test/=lib/dss-test/src/\",\":forge-std/=lib/forge-std/src/\",\":mock-erc20/=lib/mock-erc20/\",\":upgradeable-proxy/=lib/upgradeable-proxy/src/\"]},\"sources\":{\"lib/dss-test/lib/dss-interfaces/src/dapp/DSSpellAbstract.sol\":{\"keccak256\":\"0xee3e7691619ee7d923ead3b1c3ed3be047d9e58f5957c099201783e928d432fd\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://e9542cd2ce33ca01effef0e36bad327c7d8b9113b01b33c6e012d8550bce94b4\",\"dweb:/ipfs/Qme2ivYZWVF5KB8rNwRsXd6T2YkPUhpetmBrTozxfF4w6g\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.20+commit.a1b79de6"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "cast"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "data",
+          "outputs": [
+            {
+              "internalType": "bytes",
+              "name": "",
+              "type": "bytes"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "done",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "mana",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "whom",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":dss-allocator/=lib/dss-allocator/",
+        ":dss-interfaces/=lib/dss-test/lib/dss-interfaces/src/",
+        ":dss-test/=lib/dss-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":mock-erc20/=lib/mock-erc20/",
+        ":upgradeable-proxy/=lib/upgradeable-proxy/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "lib/dss-test/lib/dss-interfaces/src/dapp/DSSpellAbstract.sol": "DSSpellAbstract"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/dss-test/lib/dss-interfaces/src/dapp/DSSpellAbstract.sol": {
+        "keccak256": "0xee3e7691619ee7d923ead3b1c3ed3be047d9e58f5957c099201783e928d432fd",
+        "urls": [
+          "bzz-raw://e9542cd2ce33ca01effef0e36bad327c7d8b9113b01b33c6e012d8550bce94b4",
+          "dweb:/ipfs/Qme2ivYZWVF5KB8rNwRsXd6T2YkPUhpetmBrTozxfF4w6g"
+        ],
+        "license": "AGPL-3.0-or-later"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dapp/DSSpellAbstract.sol",
+    "id": 1352,
+    "exportedSymbols": {
+      "DSSpellAbstract": [
+        1351
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "46:340:11",
+    "nodes": [
+      {
+        "id": 1327,
+        "nodeType": "PragmaDirective",
+        "src": "46:25:11",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.5",
+          ".12"
+        ]
+      },
+      {
+        "id": 1351,
+        "nodeType": "ContractDefinition",
+        "src": "112:273:11",
+        "nodes": [
+          {
+            "id": 1332,
+            "nodeType": "FunctionDefinition",
+            "src": "144:48:11",
+            "nodes": [],
+            "functionSelector": "c5c0db08",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "whom",
+            "nameLocation": "153:4:11",
+            "parameters": {
+              "id": 1328,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "157:2:11"
+            },
+            "returnParameters": {
+              "id": 1331,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1330,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1332,
+                  "src": "183:7:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1329,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "183:7:11",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "182:9:11"
+            },
+            "scope": 1351,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 1337,
+            "nodeType": "FunctionDefinition",
+            "src": "197:48:11",
+            "nodes": [],
+            "functionSelector": "bdb001a7",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "mana",
+            "nameLocation": "206:4:11",
+            "parameters": {
+              "id": 1333,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "210:2:11"
+            },
+            "returnParameters": {
+              "id": 1336,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1335,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1337,
+                  "src": "236:7:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1334,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "236:7:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "235:9:11"
+            },
+            "scope": 1351,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 1342,
+            "nodeType": "FunctionDefinition",
+            "src": "250:53:11",
+            "nodes": [],
+            "functionSelector": "73d4a13a",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "data",
+            "nameLocation": "259:4:11",
+            "parameters": {
+              "id": 1338,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "263:2:11"
+            },
+            "returnParameters": {
+              "id": 1341,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1340,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1342,
+                  "src": "289:12:11",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 1339,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "289:5:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "288:14:11"
+            },
+            "scope": 1351,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 1347,
+            "nodeType": "FunctionDefinition",
+            "src": "308:45:11",
+            "nodes": [],
+            "functionSelector": "ae8421e1",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "done",
+            "nameLocation": "317:4:11",
+            "parameters": {
+              "id": 1343,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "321:2:11"
+            },
+            "returnParameters": {
+              "id": 1346,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1345,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1347,
+                  "src": "347:4:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 1344,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "347:4:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "346:6:11"
+            },
+            "scope": 1351,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 1350,
+            "nodeType": "FunctionDefinition",
+            "src": "358:25:11",
+            "nodes": [],
+            "functionSelector": "96d373e5",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "cast",
+            "nameLocation": "367:4:11",
+            "parameters": {
+              "id": 1348,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "371:2:11"
+            },
+            "returnParameters": {
+              "id": 1349,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "382:0:11"
+            },
+            "scope": 1351,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "DSSpellAbstract",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          1351
+        ],
+        "name": "DSSpellAbstract",
+        "nameLocation": "122:15:11",
+        "scope": 1352,
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "license": "AGPL-3.0-or-later"
+  },
+  "id": 11
+}

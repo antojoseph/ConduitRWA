@@ -1,0 +1,201 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "burn",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "burn(address)": "89afcb44"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"burn\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/dss-test/lib/dss-interfaces/src/sai/GemPitAbstract.sol\":\"GemPitAbstract\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":dss-allocator/=lib/dss-allocator/\",\":dss-interfaces/=lib/dss-test/lib/dss-interfaces/src/\",\":dss-test/=lib/dss-test/src/\",\":forge-std/=lib/forge-std/src/\",\":mock-erc20/=lib/mock-erc20/\",\":upgradeable-proxy/=lib/upgradeable-proxy/src/\"]},\"sources\":{\"lib/dss-test/lib/dss-interfaces/src/sai/GemPitAbstract.sol\":{\"keccak256\":\"0xa7116dffcf6e010e237bb7d83cf7d2a07cbdc4d5a4ff42d923f33b6ba7fe65ce\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://c37a42eba15a70c75e0cc4d945fdd6317d736df35fda7f28ac0d4f11acb47aec\",\"dweb:/ipfs/QmTDBeBudDAydVATi9u9aymTGDb3rWMS2735T3Hi9S3SH9\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.20+commit.a1b79de6"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "burn"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":dss-allocator/=lib/dss-allocator/",
+        ":dss-interfaces/=lib/dss-test/lib/dss-interfaces/src/",
+        ":dss-test/=lib/dss-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":mock-erc20/=lib/mock-erc20/",
+        ":upgradeable-proxy/=lib/upgradeable-proxy/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "lib/dss-test/lib/dss-interfaces/src/sai/GemPitAbstract.sol": "GemPitAbstract"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/dss-test/lib/dss-interfaces/src/sai/GemPitAbstract.sol": {
+        "keccak256": "0xa7116dffcf6e010e237bb7d83cf7d2a07cbdc4d5a4ff42d923f33b6ba7fe65ce",
+        "urls": [
+          "bzz-raw://c37a42eba15a70c75e0cc4d945fdd6317d736df35fda7f28ac0d4f11acb47aec",
+          "dweb:/ipfs/QmTDBeBudDAydVATi9u9aymTGDb3rWMS2735T3Hi9S3SH9"
+        ],
+        "license": "AGPL-3.0-or-later"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "lib/dss-test/lib/dss-interfaces/src/sai/GemPitAbstract.sol",
+    "id": 6420,
+    "exportedSymbols": {
+      "GemPitAbstract": [
+        6419
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "46:152:62",
+    "nodes": [
+      {
+        "id": 6413,
+        "nodeType": "PragmaDirective",
+        "src": "46:25:62",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.5",
+          ".12"
+        ]
+      },
+      {
+        "id": 6419,
+        "nodeType": "ContractDefinition",
+        "src": "132:65:62",
+        "nodes": [
+          {
+            "id": 6418,
+            "nodeType": "FunctionDefinition",
+            "src": "163:32:62",
+            "nodes": [],
+            "functionSelector": "89afcb44",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "burn",
+            "nameLocation": "172:4:62",
+            "parameters": {
+              "id": 6416,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6415,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6418,
+                  "src": "177:7:62",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 6414,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "177:7:62",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "176:9:62"
+            },
+            "returnParameters": {
+              "id": 6417,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "194:0:62"
+            },
+            "scope": 6419,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "GemPitAbstract",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          6419
+        ],
+        "name": "GemPitAbstract",
+        "nameLocation": "142:14:62",
+        "scope": 6420,
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "license": "AGPL-3.0-or-later"
+  },
+  "id": 62
+}

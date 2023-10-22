@@ -1,0 +1,2054 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "lib/dss-test/lib/dss-interfaces/src/Interfaces.sol",
+    "id": 776,
+    "exportedSymbols": {
+      "AuthGemJoinAbstract": [
+        1636
+      ],
+      "CatAbstract": [
+        1741
+      ],
+      "ChainlogAbstract": [
+        1831
+      ],
+      "ChainlogHelper": [
+        1841
+      ],
+      "ClipAbstract": [
+        2034
+      ],
+      "ClipperMomAbstract": [
+        2097
+      ],
+      "CureAbstract": [
+        2211
+      ],
+      "DSAuthAbstract": [
+        810
+      ],
+      "DSAuthorityAbstract": [
+        789
+      ],
+      "DSChiefAbstract": [
+        1036
+      ],
+      "DSPauseAbstract": [
+        1126
+      ],
+      "DSPauseProxyAbstract": [
+        1143
+      ],
+      "DSRolesAbstract": [
+        1286
+      ],
+      "DSRuneAbstract": [
+        1325
+      ],
+      "DSSpellAbstract": [
+        1351
+      ],
+      "DSThingAbstract": [
+        1374
+      ],
+      "DSTokenAbstract": [
+        1521
+      ],
+      "DSValueAbstract": [
+        1574
+      ],
+      "DaiAbstract": [
+        2374
+      ],
+      "DaiJoinAbstract": [
+        2426
+      ],
+      "DogAbstract": [
+        2544
+      ],
+      "DssAutoLineAbstract": [
+        2607
+      ],
+      "DssCdpManagerAbstract": [
+        2782
+      ],
+      "ESMAbstract": [
+        2877
+      ],
+      "ETHJoinAbstract": [
+        2927
+      ],
+      "EndAbstract": [
+        3114
+      ],
+      "ExponentialDecreaseAbstract": [
+        3155
+      ],
+      "FaucetAbstract": [
+        3240
+      ],
+      "FlapAbstract": [
+        3365
+      ],
+      "FlashAbstract": [
+        3478
+      ],
+      "FlipAbstract": [
+        3609
+      ],
+      "FlipperMomAbstract": [
+        3647
+      ],
+      "FlopAbstract": [
+        3772
+      ],
+      "GemAbstract": [
+        634
+      ],
+      "GemJoinAbstract": [
+        3834
+      ],
+      "GemJoinImplementationAbstract": [
+        3903
+      ],
+      "GemJoinManagedAbstract": [
+        3967
+      ],
+      "GemPitAbstract": [
+        6419
+      ],
+      "GetCdpsAbstract": [
+        4002
+      ],
+      "IlkRegistryAbstract": [
+        4265
+      ],
+      "JugAbstract": [
+        4344
+      ],
+      "LPOsmAbstract": [
+        4488
+      ],
+      "LerpAbstract": [
+        4536
+      ],
+      "LerpFactoryAbstract": [
+        4624
+      ],
+      "LinearDecreaseAbstract": [
+        4665
+      ],
+      "MedianAbstract": [
+        4790
+      ],
+      "MkrAuthorityAbstract": [
+        4831
+      ],
+      "OsmAbstract": [
+        4946
+      ],
+      "OsmMomAbstract": [
+        4988
+      ],
+      "PotAbstract": [
+        5082
+      ],
+      "PsmAbstract": [
+        5173
+      ],
+      "RwaInputConduit2Abstract": [
+        5911
+      ],
+      "RwaInputConduit3Abstract": [
+        6006
+      ],
+      "RwaInputConduitAbstract": [
+        5874
+      ],
+      "RwaInputConduitBaseAbstract": [
+        5866
+      ],
+      "RwaJarAbstract": [
+        6032
+      ],
+      "RwaLiquidationOracleAbstract": [
+        6124
+      ],
+      "RwaOutputConduit2Abstract": [
+        6224
+      ],
+      "RwaOutputConduit3Abstract": [
+        6319
+      ],
+      "RwaOutputConduitAbstract": [
+        6204
+      ],
+      "RwaOutputConduitBaseAbstract": [
+        6179
+      ],
+      "RwaUrnAbstract": [
+        6411
+      ],
+      "SaiMomAbstract": [
+        6517
+      ],
+      "SaiTapAbstract": [
+        6652
+      ],
+      "SaiTopAbstract": [
+        6746
+      ],
+      "SaiTubAbstract": [
+        7081
+      ],
+      "SaiVoxAbstract": [
+        7154
+      ],
+      "SpotAbstract": [
+        5250
+      ],
+      "StairstepExponentialDecreaseAbstract": [
+        5296
+      ],
+      "VatAbstract": [
+        5523
+      ],
+      "VestAbstract": [
+        5721
+      ],
+      "VowAbstract": [
+        5850
+      ],
+      "WardsAbstract": [
+        7174
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "46:4421:4",
+    "nodes": [
+      {
+        "id": 636,
+        "nodeType": "PragmaDirective",
+        "src": "46:25:4",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.5",
+          ".12"
+        ]
+      },
+      {
+        "id": 638,
+        "nodeType": "ImportDirective",
+        "src": "73:52:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/ERC/GemAbstract.sol",
+        "file": "./ERC/GemAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 635,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 637,
+              "name": "GemAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 634,
+              "src": "82:11:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 641,
+        "nodeType": "ImportDirective",
+        "src": "127:85:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dapp/DSAuthorityAbstract.sol",
+        "file": "./dapp/DSAuthorityAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 811,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 639,
+              "name": "DSAuthorityAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 789,
+              "src": "136:19:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 640,
+              "name": "DSAuthAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 810,
+              "src": "157:14:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 643,
+        "nodeType": "ImportDirective",
+        "src": "213:61:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dapp/DSChiefAbstract.sol",
+        "file": "./dapp/DSChiefAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 1047,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 642,
+              "name": "DSChiefAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 1036,
+              "src": "222:15:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 645,
+        "nodeType": "ImportDirective",
+        "src": "275:61:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dapp/DSPauseAbstract.sol",
+        "file": "./dapp/DSPauseAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 1127,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 644,
+              "name": "DSPauseAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 1126,
+              "src": "284:15:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 647,
+        "nodeType": "ImportDirective",
+        "src": "337:71:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dapp/DSPauseProxyAbstract.sol",
+        "file": "./dapp/DSPauseProxyAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 1144,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 646,
+              "name": "DSPauseProxyAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 1143,
+              "src": "346:20:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 649,
+        "nodeType": "ImportDirective",
+        "src": "409:61:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dapp/DSRolesAbstract.sol",
+        "file": "./dapp/DSRolesAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 1287,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 648,
+              "name": "DSRolesAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 1286,
+              "src": "418:15:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 651,
+        "nodeType": "ImportDirective",
+        "src": "471:61:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dapp/DSSpellAbstract.sol",
+        "file": "./dapp/DSSpellAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 1352,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 650,
+              "name": "DSSpellAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 1351,
+              "src": "480:15:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 653,
+        "nodeType": "ImportDirective",
+        "src": "533:59:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dapp/DSRuneAbstract.sol",
+        "file": "./dapp/DSRuneAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 1326,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 652,
+              "name": "DSRuneAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 1325,
+              "src": "542:14:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 655,
+        "nodeType": "ImportDirective",
+        "src": "593:61:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dapp/DSThingAbstract.sol",
+        "file": "./dapp/DSThingAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 1375,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 654,
+              "name": "DSThingAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 1374,
+              "src": "602:15:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 657,
+        "nodeType": "ImportDirective",
+        "src": "655:61:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dapp/DSTokenAbstract.sol",
+        "file": "./dapp/DSTokenAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 1522,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 656,
+              "name": "DSTokenAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 1521,
+              "src": "664:15:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 659,
+        "nodeType": "ImportDirective",
+        "src": "717:61:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dapp/DSValueAbstract.sol",
+        "file": "./dapp/DSValueAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 1575,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 658,
+              "name": "DSValueAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 1574,
+              "src": "726:15:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 661,
+        "nodeType": "ImportDirective",
+        "src": "780:68:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/AuthGemJoinAbstract.sol",
+        "file": "./dss/AuthGemJoinAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 1637,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 660,
+              "name": "AuthGemJoinAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 1636,
+              "src": "789:19:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 663,
+        "nodeType": "ImportDirective",
+        "src": "849:52:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/CatAbstract.sol",
+        "file": "./dss/CatAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 1742,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 662,
+              "name": "CatAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 1741,
+              "src": "858:11:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 665,
+        "nodeType": "ImportDirective",
+        "src": "902:62:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/ChainlogAbstract.sol",
+        "file": "./dss/ChainlogAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 1842,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 664,
+              "name": "ChainlogAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 1831,
+              "src": "911:16:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 667,
+        "nodeType": "ImportDirective",
+        "src": "965:60:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/ChainlogAbstract.sol",
+        "file": "./dss/ChainlogAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 1842,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 666,
+              "name": "ChainlogHelper",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 1841,
+              "src": "974:14:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 669,
+        "nodeType": "ImportDirective",
+        "src": "1026:54:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/ClipAbstract.sol",
+        "file": "./dss/ClipAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 2035,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 668,
+              "name": "ClipAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 2034,
+              "src": "1035:12:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 671,
+        "nodeType": "ImportDirective",
+        "src": "1081:66:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/ClipperMomAbstract.sol",
+        "file": "./dss/ClipperMomAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 2098,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 670,
+              "name": "ClipperMomAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 2097,
+              "src": "1090:18:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 673,
+        "nodeType": "ImportDirective",
+        "src": "1148:54:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/CureAbstract.sol",
+        "file": "./dss/CureAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 2212,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 672,
+              "name": "CureAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 2211,
+              "src": "1157:12:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 675,
+        "nodeType": "ImportDirective",
+        "src": "1203:52:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/DaiAbstract.sol",
+        "file": "./dss/DaiAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 2375,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 674,
+              "name": "DaiAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 2374,
+              "src": "1212:11:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 677,
+        "nodeType": "ImportDirective",
+        "src": "1256:60:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/DaiJoinAbstract.sol",
+        "file": "./dss/DaiJoinAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 2427,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 676,
+              "name": "DaiJoinAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 2426,
+              "src": "1265:15:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 679,
+        "nodeType": "ImportDirective",
+        "src": "1317:52:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/DogAbstract.sol",
+        "file": "./dss/DogAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 2545,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 678,
+              "name": "DogAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 2544,
+              "src": "1326:11:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 681,
+        "nodeType": "ImportDirective",
+        "src": "1370:68:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/DssAutoLineAbstract.sol",
+        "file": "./dss/DssAutoLineAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 2608,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 680,
+              "name": "DssAutoLineAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 2607,
+              "src": "1379:19:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 683,
+        "nodeType": "ImportDirective",
+        "src": "1439:64:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/DssCdpManager.sol",
+        "file": "./dss/DssCdpManager.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 2783,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 682,
+              "name": "DssCdpManagerAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 2782,
+              "src": "1448:21:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 685,
+        "nodeType": "ImportDirective",
+        "src": "1504:52:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/EndAbstract.sol",
+        "file": "./dss/EndAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 3115,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 684,
+              "name": "EndAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 3114,
+              "src": "1513:11:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 687,
+        "nodeType": "ImportDirective",
+        "src": "1557:52:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/ESMAbstract.sol",
+        "file": "./dss/ESMAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 2878,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 686,
+              "name": "ESMAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 2877,
+              "src": "1566:11:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 689,
+        "nodeType": "ImportDirective",
+        "src": "1610:60:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/ETHJoinAbstract.sol",
+        "file": "./dss/ETHJoinAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 2928,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 688,
+              "name": "ETHJoinAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 2927,
+              "src": "1619:15:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 691,
+        "nodeType": "ImportDirective",
+        "src": "1671:84:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/ExponentialDecreaseAbstract.sol",
+        "file": "./dss/ExponentialDecreaseAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 3156,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 690,
+              "name": "ExponentialDecreaseAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 3155,
+              "src": "1680:27:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 693,
+        "nodeType": "ImportDirective",
+        "src": "1756:58:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/FaucetAbstract.sol",
+        "file": "./dss/FaucetAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 3241,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 692,
+              "name": "FaucetAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 3240,
+              "src": "1765:14:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 695,
+        "nodeType": "ImportDirective",
+        "src": "1815:54:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/FlapAbstract.sol",
+        "file": "./dss/FlapAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 3366,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 694,
+              "name": "FlapAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 3365,
+              "src": "1824:12:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 697,
+        "nodeType": "ImportDirective",
+        "src": "1870:56:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/FlashAbstract.sol",
+        "file": "./dss/FlashAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 3479,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 696,
+              "name": "FlashAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 3478,
+              "src": "1879:13:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 699,
+        "nodeType": "ImportDirective",
+        "src": "1927:54:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/FlipAbstract.sol",
+        "file": "./dss/FlipAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 3610,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 698,
+              "name": "FlipAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 3609,
+              "src": "1936:12:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 701,
+        "nodeType": "ImportDirective",
+        "src": "1982:66:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/FlipperMomAbstract.sol",
+        "file": "./dss/FlipperMomAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 3648,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 700,
+              "name": "FlipperMomAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 3647,
+              "src": "1991:18:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 703,
+        "nodeType": "ImportDirective",
+        "src": "2049:54:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/FlopAbstract.sol",
+        "file": "./dss/FlopAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 3773,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 702,
+              "name": "FlopAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 3772,
+              "src": "2058:12:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 705,
+        "nodeType": "ImportDirective",
+        "src": "2104:60:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/GemJoinAbstract.sol",
+        "file": "./dss/GemJoinAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 3835,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 704,
+              "name": "GemJoinAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 3834,
+              "src": "2113:15:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 707,
+        "nodeType": "ImportDirective",
+        "src": "2165:88:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/GemJoinImplementationAbstract.sol",
+        "file": "./dss/GemJoinImplementationAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 3904,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 706,
+              "name": "GemJoinImplementationAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 3903,
+              "src": "2174:29:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 709,
+        "nodeType": "ImportDirective",
+        "src": "2254:74:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/GemJoinManagedAbstract.sol",
+        "file": "./dss/GemJoinManagedAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 3968,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 708,
+              "name": "GemJoinManagedAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 3967,
+              "src": "2263:22:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 711,
+        "nodeType": "ImportDirective",
+        "src": "2329:60:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/GetCdpsAbstract.sol",
+        "file": "./dss/GetCdpsAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 4003,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 710,
+              "name": "GetCdpsAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 4002,
+              "src": "2338:15:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 713,
+        "nodeType": "ImportDirective",
+        "src": "2390:68:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/IlkRegistryAbstract.sol",
+        "file": "./dss/IlkRegistryAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 4266,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 712,
+              "name": "IlkRegistryAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 4265,
+              "src": "2399:19:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 715,
+        "nodeType": "ImportDirective",
+        "src": "2459:52:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/JugAbstract.sol",
+        "file": "./dss/JugAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 4345,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 714,
+              "name": "JugAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 4344,
+              "src": "2468:11:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 717,
+        "nodeType": "ImportDirective",
+        "src": "2512:54:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/LerpAbstract.sol",
+        "file": "./dss/LerpAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 4537,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 716,
+              "name": "LerpAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 4536,
+              "src": "2521:12:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 719,
+        "nodeType": "ImportDirective",
+        "src": "2567:68:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/LerpFactoryAbstract.sol",
+        "file": "./dss/LerpFactoryAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 4625,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 718,
+              "name": "LerpFactoryAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 4624,
+              "src": "2576:19:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 721,
+        "nodeType": "ImportDirective",
+        "src": "2636:74:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/LinearDecreaseAbstract.sol",
+        "file": "./dss/LinearDecreaseAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 4666,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 720,
+              "name": "LinearDecreaseAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 4665,
+              "src": "2645:22:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 723,
+        "nodeType": "ImportDirective",
+        "src": "2711:56:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/LPOsmAbstract.sol",
+        "file": "./dss/LPOsmAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 4489,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 722,
+              "name": "LPOsmAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 4488,
+              "src": "2720:13:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 725,
+        "nodeType": "ImportDirective",
+        "src": "2768:70:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/MkrAuthorityAbstract.sol",
+        "file": "./dss/MkrAuthorityAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 4832,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 724,
+              "name": "MkrAuthorityAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 4831,
+              "src": "2777:20:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 727,
+        "nodeType": "ImportDirective",
+        "src": "2839:58:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/MedianAbstract.sol",
+        "file": "./dss/MedianAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 4791,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 726,
+              "name": "MedianAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 4790,
+              "src": "2848:14:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 729,
+        "nodeType": "ImportDirective",
+        "src": "2898:52:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/OsmAbstract.sol",
+        "file": "./dss/OsmAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 4947,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 728,
+              "name": "OsmAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 4946,
+              "src": "2907:11:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 731,
+        "nodeType": "ImportDirective",
+        "src": "2951:58:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/OsmMomAbstract.sol",
+        "file": "./dss/OsmMomAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 4989,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 730,
+              "name": "OsmMomAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 4988,
+              "src": "2960:14:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 733,
+        "nodeType": "ImportDirective",
+        "src": "3010:52:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/PotAbstract.sol",
+        "file": "./dss/PotAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 5083,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 732,
+              "name": "PotAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 5082,
+              "src": "3019:11:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 735,
+        "nodeType": "ImportDirective",
+        "src": "3063:52:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/PsmAbstract.sol",
+        "file": "./dss/PsmAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 5174,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 734,
+              "name": "PsmAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 5173,
+              "src": "3072:11:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 737,
+        "nodeType": "ImportDirective",
+        "src": "3116:54:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/SpotAbstract.sol",
+        "file": "./dss/SpotAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 5251,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 736,
+              "name": "SpotAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 5250,
+              "src": "3125:12:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 739,
+        "nodeType": "ImportDirective",
+        "src": "3171:102:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/StairstepExponentialDecreaseAbstract.sol",
+        "file": "./dss/StairstepExponentialDecreaseAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 5297,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 738,
+              "name": "StairstepExponentialDecreaseAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 5296,
+              "src": "3180:36:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 741,
+        "nodeType": "ImportDirective",
+        "src": "3274:52:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/VatAbstract.sol",
+        "file": "./dss/VatAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 5524,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 740,
+              "name": "VatAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 5523,
+              "src": "3283:11:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 743,
+        "nodeType": "ImportDirective",
+        "src": "3327:54:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/VestAbstract.sol",
+        "file": "./dss/VestAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 5722,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 742,
+              "name": "VestAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 5721,
+              "src": "3336:12:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 745,
+        "nodeType": "ImportDirective",
+        "src": "3382:52:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/VowAbstract.sol",
+        "file": "./dss/VowAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 5851,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 744,
+              "name": "VowAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 5850,
+              "src": "3391:11:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 750,
+        "nodeType": "ImportDirective",
+        "src": "3455:171:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/mip21/RwaInputConduitAbstract.sol",
+        "file": "./dss/mip21/RwaInputConduitAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 6007,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 746,
+              "name": "RwaInputConduitBaseAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 5866,
+              "src": "3466:27:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 747,
+              "name": "RwaInputConduitAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 5874,
+              "src": "3497:23:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 748,
+              "name": "RwaInputConduit2Abstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 5911,
+              "src": "3524:24:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 749,
+              "name": "RwaInputConduit3Abstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 6006,
+              "src": "3552:24:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 752,
+        "nodeType": "ImportDirective",
+        "src": "3627:64:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/mip21/RwaJarAbstract.sol",
+        "file": "./dss/mip21/RwaJarAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 6033,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 751,
+              "name": "RwaJarAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 6032,
+              "src": "3636:14:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 754,
+        "nodeType": "ImportDirective",
+        "src": "3692:92:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/mip21/RwaLiquidationOracleAbstract.sol",
+        "file": "./dss/mip21/RwaLiquidationOracleAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 6125,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 753,
+              "name": "RwaLiquidationOracleAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 6124,
+              "src": "3701:28:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 759,
+        "nodeType": "ImportDirective",
+        "src": "3785:176:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/mip21/RwaOutputConduitAbstract.sol",
+        "file": "./dss/mip21/RwaOutputConduitAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 6320,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 755,
+              "name": "RwaOutputConduitBaseAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 6179,
+              "src": "3796:28:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 756,
+              "name": "RwaOutputConduitAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 6204,
+              "src": "3828:24:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 757,
+              "name": "RwaOutputConduit2Abstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 6224,
+              "src": "3856:25:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 758,
+              "name": "RwaOutputConduit3Abstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 6319,
+              "src": "3885:25:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 761,
+        "nodeType": "ImportDirective",
+        "src": "3962:64:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/mip21/RwaUrnAbstract.sol",
+        "file": "./dss/mip21/RwaUrnAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 6412,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 760,
+              "name": "RwaUrnAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 6411,
+              "src": "3971:14:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 763,
+        "nodeType": "ImportDirective",
+        "src": "4028:58:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/sai/GemPitAbstract.sol",
+        "file": "./sai/GemPitAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 6420,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 762,
+              "name": "GemPitAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 6419,
+              "src": "4037:14:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 765,
+        "nodeType": "ImportDirective",
+        "src": "4087:58:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/sai/SaiMomAbstract.sol",
+        "file": "./sai/SaiMomAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 6518,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 764,
+              "name": "SaiMomAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 6517,
+              "src": "4096:14:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 767,
+        "nodeType": "ImportDirective",
+        "src": "4146:58:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/sai/SaiTapAbstract.sol",
+        "file": "./sai/SaiTapAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 6653,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 766,
+              "name": "SaiTapAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 6652,
+              "src": "4155:14:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 769,
+        "nodeType": "ImportDirective",
+        "src": "4205:58:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/sai/SaiTopAbstract.sol",
+        "file": "./sai/SaiTopAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 6747,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 768,
+              "name": "SaiTopAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 6746,
+              "src": "4214:14:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 771,
+        "nodeType": "ImportDirective",
+        "src": "4264:58:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/sai/SaiTubAbstract.sol",
+        "file": "./sai/SaiTubAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 7082,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 770,
+              "name": "SaiTubAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 7081,
+              "src": "4273:14:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 773,
+        "nodeType": "ImportDirective",
+        "src": "4323:58:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/sai/SaiVoxAbstract.sol",
+        "file": "./sai/SaiVoxAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 7155,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 772,
+              "name": "SaiVoxAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 7154,
+              "src": "4332:14:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 775,
+        "nodeType": "ImportDirective",
+        "src": "4408:58:4",
+        "nodes": [],
+        "absolutePath": "lib/dss-test/lib/dss-interfaces/src/utils/WardsAbstract.sol",
+        "file": "./utils/WardsAbstract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 776,
+        "sourceUnit": 7175,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 774,
+              "name": "WardsAbstract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 7174,
+              "src": "4417:13:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      }
+    ],
+    "license": "AGPL-3.0-or-later"
+  },
+  "id": 4
+}

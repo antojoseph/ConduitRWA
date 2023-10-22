@@ -1,0 +1,494 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "chainlog",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "dai",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "daiJoin",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "toss",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "void",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "chainlog()": "ce6f74aa",
+    "dai()": "f4b9fa75",
+    "daiJoin()": "c11645bc",
+    "toss(uint256)": "9f95250c",
+    "void()": "ac4c25b2"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"chainlog\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"dai\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"daiJoin\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"toss\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"void\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/dss-test/lib/dss-interfaces/src/dss/mip21/RwaJarAbstract.sol\":\"RwaJarAbstract\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":dss-allocator/=lib/dss-allocator/\",\":dss-interfaces/=lib/dss-test/lib/dss-interfaces/src/\",\":dss-test/=lib/dss-test/src/\",\":forge-std/=lib/forge-std/src/\",\":mock-erc20/=lib/mock-erc20/\",\":upgradeable-proxy/=lib/upgradeable-proxy/src/\"]},\"sources\":{\"lib/dss-test/lib/dss-interfaces/src/dss/mip21/RwaJarAbstract.sol\":{\"keccak256\":\"0x33e2d2fda52850a807dba3a560c7076c7ced44f6875b5ef075dccca475214c35\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://e4fa0ba90fceb4a6546e9cd519eb24867fc90c7b5635b6900a26300a5e61ff14\",\"dweb:/ipfs/QmQSojdu3q9cibzoKupvCyLNyx2mPF3QtNSwy1vZ5gfNS6\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.20+commit.a1b79de6"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "chainlog",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "dai",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "daiJoin",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "toss"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "void"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":dss-allocator/=lib/dss-allocator/",
+        ":dss-interfaces/=lib/dss-test/lib/dss-interfaces/src/",
+        ":dss-test/=lib/dss-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":mock-erc20/=lib/mock-erc20/",
+        ":upgradeable-proxy/=lib/upgradeable-proxy/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "lib/dss-test/lib/dss-interfaces/src/dss/mip21/RwaJarAbstract.sol": "RwaJarAbstract"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/dss-test/lib/dss-interfaces/src/dss/mip21/RwaJarAbstract.sol": {
+        "keccak256": "0x33e2d2fda52850a807dba3a560c7076c7ced44f6875b5ef075dccca475214c35",
+        "urls": [
+          "bzz-raw://e4fa0ba90fceb4a6546e9cd519eb24867fc90c7b5635b6900a26300a5e61ff14",
+          "dweb:/ipfs/QmQSojdu3q9cibzoKupvCyLNyx2mPF3QtNSwy1vZ5gfNS6"
+        ],
+        "license": "AGPL-3.0-or-later"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "lib/dss-test/lib/dss-interfaces/src/dss/mip21/RwaJarAbstract.sol",
+    "id": 6033,
+    "exportedSymbols": {
+      "RwaJarAbstract": [
+        6032
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "120:362:58",
+    "nodes": [
+      {
+        "id": 6008,
+        "nodeType": "PragmaDirective",
+        "src": "120:25:58",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.5",
+          ".12"
+        ]
+      },
+      {
+        "id": 6032,
+        "nodeType": "ContractDefinition",
+        "src": "224:257:58",
+        "nodes": [
+          {
+            "id": 6013,
+            "nodeType": "FunctionDefinition",
+            "src": "255:50:58",
+            "nodes": [],
+            "functionSelector": "c11645bc",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "daiJoin",
+            "nameLocation": "264:7:58",
+            "parameters": {
+              "id": 6009,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "271:2:58"
+            },
+            "returnParameters": {
+              "id": 6012,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6011,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6013,
+                  "src": "296:7:58",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 6010,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "296:7:58",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "295:9:58"
+            },
+            "scope": 6032,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 6018,
+            "nodeType": "FunctionDefinition",
+            "src": "310:46:58",
+            "nodes": [],
+            "functionSelector": "f4b9fa75",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "dai",
+            "nameLocation": "319:3:58",
+            "parameters": {
+              "id": 6014,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "322:2:58"
+            },
+            "returnParameters": {
+              "id": 6017,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6016,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6018,
+                  "src": "347:7:58",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 6015,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "347:7:58",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "346:9:58"
+            },
+            "scope": 6032,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 6023,
+            "nodeType": "FunctionDefinition",
+            "src": "361:51:58",
+            "nodes": [],
+            "functionSelector": "ce6f74aa",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "chainlog",
+            "nameLocation": "370:8:58",
+            "parameters": {
+              "id": 6019,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "378:2:58"
+            },
+            "returnParameters": {
+              "id": 6022,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6021,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6023,
+                  "src": "403:7:58",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 6020,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "403:7:58",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "402:9:58"
+            },
+            "scope": 6032,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 6026,
+            "nodeType": "FunctionDefinition",
+            "src": "417:25:58",
+            "nodes": [],
+            "functionSelector": "ac4c25b2",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "void",
+            "nameLocation": "426:4:58",
+            "parameters": {
+              "id": 6024,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "430:2:58"
+            },
+            "returnParameters": {
+              "id": 6025,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "441:0:58"
+            },
+            "scope": 6032,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 6031,
+            "nodeType": "FunctionDefinition",
+            "src": "447:32:58",
+            "nodes": [],
+            "functionSelector": "9f95250c",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "toss",
+            "nameLocation": "456:4:58",
+            "parameters": {
+              "id": 6029,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6028,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6031,
+                  "src": "461:7:58",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 6027,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "461:7:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "460:9:58"
+            },
+            "returnParameters": {
+              "id": 6030,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "478:0:58"
+            },
+            "scope": 6032,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "RwaJarAbstract",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          6032
+        ],
+        "name": "RwaJarAbstract",
+        "nameLocation": "234:14:58",
+        "scope": 6033,
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "license": "AGPL-3.0-or-later"
+  },
+  "id": 58
+}

@@ -1,0 +1,874 @@
+{
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "usr",
+          "type": "address"
+        }
+      ],
+      "name": "Deny",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "usr",
+          "type": "address"
+        }
+      ],
+      "name": "Rely",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "implementation_",
+          "type": "address"
+        }
+      ],
+      "name": "SetImplementation",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "usr",
+          "type": "address"
+        }
+      ],
+      "name": "deny",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "implementation",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "implementation_",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "usr",
+          "type": "address"
+        }
+      ],
+      "name": "rely",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "implementation_",
+          "type": "address"
+        }
+      ],
+      "name": "setImplementation",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "wards",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "relied",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "deny(address)": "9c52a7f1",
+    "implementation()": "5c60da1b",
+    "rely(address)": "65fae35e",
+    "setImplementation(address)": "d784d426",
+    "wards(address)": "bf353dbb"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"usr\",\"type\":\"address\"}],\"name\":\"Deny\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"usr\",\"type\":\"address\"}],\"name\":\"Rely\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"implementation_\",\"type\":\"address\"}],\"name\":\"SetImplementation\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"usr\",\"type\":\"address\"}],\"name\":\"deny\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"implementation\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"implementation_\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"usr\",\"type\":\"address\"}],\"name\":\"rely\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"implementation_\",\"type\":\"address\"}],\"name\":\"setImplementation\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"}],\"name\":\"wards\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"relied\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"events\":{\"Deny(address)\":{\"details\":\"Event emitted when a new admin is removed from the Conduit.\",\"params\":{\"usr\":\"The address of the user to remove.\"}},\"Rely(address)\":{\"details\":\"Event emitted when a new admin is added to the Conduit.\",\"params\":{\"usr\":\"The address of the user to add.\"}},\"SetImplementation(address)\":{\"details\":\"Event emitted when the implementation address is changed.\",\"params\":{\"implementation_\":\"The address of the new implementation.\"}}},\"kind\":\"dev\",\"methods\":{\"deny(address)\":{\"details\":\"Function to remove an addresses admin permissions.\",\"params\":{\"usr\":\"The address of the admin.\"}},\"implementation()\":{\"details\":\"Returns the address of the implementation contract.\",\"returns\":{\"implementation_\":\"The address of the implementation contract.\"}},\"rely(address)\":{\"details\":\"Function to give an address admin permissions.\",\"params\":{\"usr\":\"The address of the new admin.\"}},\"setImplementation(address)\":{\"details\":\"Function to set the implementation address of the proxy.\",\"params\":{\"implementation_\":\"The address of the new implementation.\"}},\"wards(address)\":{\"details\":\"Returns a 0 or 1 depending on if the user has been added as an admin.\",\"returns\":{\"relied\":\"The value of the user's admin status.\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/upgradeable-proxy/src/interfaces/IUpgradeableProxy.sol\":\"IUpgradeableProxy\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":dss-allocator/=lib/dss-allocator/\",\":dss-interfaces/=lib/dss-test/lib/dss-interfaces/src/\",\":dss-test/=lib/dss-test/src/\",\":forge-std/=lib/forge-std/src/\",\":mock-erc20/=lib/mock-erc20/\",\":upgradeable-proxy/=lib/upgradeable-proxy/src/\"]},\"sources\":{\"lib/upgradeable-proxy/src/interfaces/IUpgradeableProxy.sol\":{\"keccak256\":\"0x9273681de32ac805c7f35f4e999c89836e5ea41d766a87846f9fca023cbe7b20\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://1079c8cc55d498223abc2880a1704827e7282ab2be19e42828c484bee52a7ed4\",\"dweb:/ipfs/QmTk7yPcAmUap1AtYp6H8d9hDt7mQsyjPGcFRD9SVjrWF9\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.20+commit.a1b79de6"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "usr",
+              "type": "address",
+              "indexed": true
+            }
+          ],
+          "type": "event",
+          "name": "Deny",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "usr",
+              "type": "address",
+              "indexed": true
+            }
+          ],
+          "type": "event",
+          "name": "Rely",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "implementation_",
+              "type": "address",
+              "indexed": true
+            }
+          ],
+          "type": "event",
+          "name": "SetImplementation",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "usr",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "deny"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "implementation",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "implementation_",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "usr",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "rely"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "implementation_",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "setImplementation"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "user",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "wards",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "relied",
+              "type": "uint256"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "deny(address)": {
+            "details": "Function to remove an addresses admin permissions.",
+            "params": {
+              "usr": "The address of the admin."
+            }
+          },
+          "implementation()": {
+            "details": "Returns the address of the implementation contract.",
+            "returns": {
+              "implementation_": "The address of the implementation contract."
+            }
+          },
+          "rely(address)": {
+            "details": "Function to give an address admin permissions.",
+            "params": {
+              "usr": "The address of the new admin."
+            }
+          },
+          "setImplementation(address)": {
+            "details": "Function to set the implementation address of the proxy.",
+            "params": {
+              "implementation_": "The address of the new implementation."
+            }
+          },
+          "wards(address)": {
+            "details": "Returns a 0 or 1 depending on if the user has been added as an admin.",
+            "returns": {
+              "relied": "The value of the user's admin status."
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":dss-allocator/=lib/dss-allocator/",
+        ":dss-interfaces/=lib/dss-test/lib/dss-interfaces/src/",
+        ":dss-test/=lib/dss-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":mock-erc20/=lib/mock-erc20/",
+        ":upgradeable-proxy/=lib/upgradeable-proxy/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "lib/upgradeable-proxy/src/interfaces/IUpgradeableProxy.sol": "IUpgradeableProxy"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/upgradeable-proxy/src/interfaces/IUpgradeableProxy.sol": {
+        "keccak256": "0x9273681de32ac805c7f35f4e999c89836e5ea41d766a87846f9fca023cbe7b20",
+        "urls": [
+          "bzz-raw://1079c8cc55d498223abc2880a1704827e7282ab2be19e42828c484bee52a7ed4",
+          "dweb:/ipfs/QmTk7yPcAmUap1AtYp6H8d9hDt7mQsyjPGcFRD9SVjrWF9"
+        ],
+        "license": "AGPL-3.0-or-later"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "lib/upgradeable-proxy/src/interfaces/IUpgradeableProxy.sol",
+    "id": 55725,
+    "exportedSymbols": {
+      "IUpgradeableProxy": [
+        55724
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "46:2590:96",
+    "nodes": [
+      {
+        "id": 55676,
+        "nodeType": "PragmaDirective",
+        "src": "46:23:96",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 55724,
+        "nodeType": "ContractDefinition",
+        "src": "71:2564:96",
+        "nodes": [
+          {
+            "id": 55681,
+            "nodeType": "EventDefinition",
+            "src": "555:32:96",
+            "nodes": [],
+            "anonymous": false,
+            "documentation": {
+              "id": 55677,
+              "nodeType": "StructuredDocumentation",
+              "src": "410:140:96",
+              "text": "  @dev   Event emitted when a new admin is removed from the Conduit.\n  @param usr The address of the user to remove."
+            },
+            "eventSelector": "184450df2e323acec0ed3b5c7531b81f9b4cdef7914dfd4c0a4317416bb5251b",
+            "name": "Deny",
+            "nameLocation": "561:4:96",
+            "parameters": {
+              "id": 55680,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 55679,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "usr",
+                  "nameLocation": "582:3:96",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 55681,
+                  "src": "566:19:96",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 55678,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "566:7:96",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "565:21:96"
+            }
+          },
+          {
+            "id": 55686,
+            "nodeType": "EventDefinition",
+            "src": "731:32:96",
+            "nodes": [],
+            "anonymous": false,
+            "documentation": {
+              "id": 55682,
+              "nodeType": "StructuredDocumentation",
+              "src": "593:133:96",
+              "text": "  @dev   Event emitted when a new admin is added to the Conduit.\n  @param usr The address of the user to add."
+            },
+            "eventSelector": "dd0e34038ac38b2a1ce960229778ac48a8719bc900b6c4f8d0475c6e8b385a60",
+            "name": "Rely",
+            "nameLocation": "737:4:96",
+            "parameters": {
+              "id": 55685,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 55684,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "usr",
+                  "nameLocation": "758:3:96",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 55686,
+                  "src": "742:19:96",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 55683,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "742:7:96",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "741:21:96"
+            }
+          },
+          {
+            "id": 55691,
+            "nodeType": "EventDefinition",
+            "src": "928:57:96",
+            "nodes": [],
+            "anonymous": false,
+            "documentation": {
+              "id": 55687,
+              "nodeType": "StructuredDocumentation",
+              "src": "769:154:96",
+              "text": "  @dev   Event emitted when the implementation address is changed.\n  @param implementation_ The address of the new implementation."
+            },
+            "eventSelector": "ddebe6de740fe0dd01cc33ffa314d11c6ac6acbbe50b80513c4c360ae7aa4f04",
+            "name": "SetImplementation",
+            "nameLocation": "934:17:96",
+            "parameters": {
+              "id": 55690,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 55689,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "implementation_",
+                  "nameLocation": "968:15:96",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 55691,
+                  "src": "952:31:96",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 55688,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "952:7:96",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "951:33:96"
+            }
+          },
+          {
+            "id": 55697,
+            "nodeType": "FunctionDefinition",
+            "src": "1454:74:96",
+            "nodes": [],
+            "documentation": {
+              "id": 55692,
+              "nodeType": "StructuredDocumentation",
+              "src": "1295:154:96",
+              "text": "  @dev   Returns the address of the implementation contract.\n  @return implementation_ The address of the implementation contract."
+            },
+            "functionSelector": "5c60da1b",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "implementation",
+            "nameLocation": "1463:14:96",
+            "parameters": {
+              "id": 55693,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1477:2:96"
+            },
+            "returnParameters": {
+              "id": 55696,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 55695,
+                  "mutability": "mutable",
+                  "name": "implementation_",
+                  "nameLocation": "1511:15:96",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 55697,
+                  "src": "1503:23:96",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 55694,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1503:7:96",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1502:25:96"
+            },
+            "scope": 55724,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 55705,
+            "nodeType": "FunctionDefinition",
+            "src": "1697:68:96",
+            "nodes": [],
+            "documentation": {
+              "id": 55698,
+              "nodeType": "StructuredDocumentation",
+              "src": "1534:158:96",
+              "text": "  @dev    Returns a 0 or 1 depending on if the user has been added as an admin.\n  @return relied The value of the user's admin status."
+            },
+            "functionSelector": "bf353dbb",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "wards",
+            "nameLocation": "1706:5:96",
+            "parameters": {
+              "id": 55701,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 55700,
+                  "mutability": "mutable",
+                  "name": "user",
+                  "nameLocation": "1720:4:96",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 55705,
+                  "src": "1712:12:96",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 55699,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1712:7:96",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1711:14:96"
+            },
+            "returnParameters": {
+              "id": 55704,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 55703,
+                  "mutability": "mutable",
+                  "name": "relied",
+                  "nameLocation": "1757:6:96",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 55705,
+                  "src": "1749:14:96",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 55702,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1749:7:96",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1748:16:96"
+            },
+            "scope": 55724,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 55711,
+            "nodeType": "FunctionDefinition",
+            "src": "2202:36:96",
+            "nodes": [],
+            "documentation": {
+              "id": 55706,
+              "nodeType": "StructuredDocumentation",
+              "src": "2075:122:96",
+              "text": "  @dev   Function to remove an addresses admin permissions.\n  @param usr The address of the admin."
+            },
+            "functionSelector": "9c52a7f1",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "deny",
+            "nameLocation": "2211:4:96",
+            "parameters": {
+              "id": 55709,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 55708,
+                  "mutability": "mutable",
+                  "name": "usr",
+                  "nameLocation": "2224:3:96",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 55711,
+                  "src": "2216:11:96",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 55707,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2216:7:96",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2215:13:96"
+            },
+            "returnParameters": {
+              "id": 55710,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2237:0:96"
+            },
+            "scope": 55724,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 55717,
+            "nodeType": "FunctionDefinition",
+            "src": "2371:36:96",
+            "nodes": [],
+            "documentation": {
+              "id": 55712,
+              "nodeType": "StructuredDocumentation",
+              "src": "2244:122:96",
+              "text": "  @dev   Function to give an address admin permissions.\n  @param usr The address of the new admin."
+            },
+            "functionSelector": "65fae35e",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "rely",
+            "nameLocation": "2380:4:96",
+            "parameters": {
+              "id": 55715,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 55714,
+                  "mutability": "mutable",
+                  "name": "usr",
+                  "nameLocation": "2393:3:96",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 55717,
+                  "src": "2385:11:96",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 55713,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2385:7:96",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2384:13:96"
+            },
+            "returnParameters": {
+              "id": 55716,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2406:0:96"
+            },
+            "scope": 55724,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 55723,
+            "nodeType": "FunctionDefinition",
+            "src": "2571:61:96",
+            "nodes": [],
+            "documentation": {
+              "id": 55718,
+              "nodeType": "StructuredDocumentation",
+              "src": "2413:153:96",
+              "text": "  @dev   Function to set the implementation address of the proxy.\n  @param implementation_ The address of the new implementation."
+            },
+            "functionSelector": "d784d426",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setImplementation",
+            "nameLocation": "2580:17:96",
+            "parameters": {
+              "id": 55721,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 55720,
+                  "mutability": "mutable",
+                  "name": "implementation_",
+                  "nameLocation": "2606:15:96",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 55723,
+                  "src": "2598:23:96",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 55719,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2598:7:96",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2597:25:96"
+            },
+            "returnParameters": {
+              "id": 55722,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2631:0:96"
+            },
+            "scope": 55724,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IUpgradeableProxy",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          55724
+        ],
+        "name": "IUpgradeableProxy",
+        "nameLocation": "81:17:96",
+        "scope": 55725,
+        "usedErrors": [],
+        "usedEvents": [
+          55681,
+          55686,
+          55691
+        ]
+      }
+    ],
+    "license": "AGPL-3.0-or-later"
+  },
+  "id": 96
+}
