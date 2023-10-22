@@ -6,7 +6,7 @@
 
 Please run as 
 
-forge test -vvvv --match-path test/arranger-conduit/HomeLoanProtocol.t.sol  --fork-url RPC_URL
+forge test 
 
 
 install dependencies via forge install
