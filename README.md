@@ -19,7 +19,7 @@ Please run as
 install dependencies via forge install
 
 
-Tests here : https://github.com/antojoseph/ConduitRWA/test/arranger-conduit/HomeLoanProtocol.t.sol 
+Tests here : https://github.com/antojoseph/ConduitRWA/blob/main/test/arranger-conduit/HomeLoanProtocol.t.sol
 
 Home Loan protocol here : https://github.com/antojoseph/ConduitRWA/blob/main/src/HomeLoanProtocol.sol
 
