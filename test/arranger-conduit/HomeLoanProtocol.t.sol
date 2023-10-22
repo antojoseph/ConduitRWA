@@ -79,6 +79,7 @@ contract HomeLoanProtocolTest is Test {
         console.log("warp to 1697838529");
         console.log("New home loan created");
         vm.prank(lender1);
+       // loan approved.
         asset.approve(address(homeLoanStrategyImplementation), 200 ether);
         vm.prank(lender1);
         homeLoanProtocolImplementation.deposit('0xilk', address(asset), 200 ether);
