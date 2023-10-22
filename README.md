@@ -1,6 +1,6 @@
 # RWA-conduits
 
-    Conduit will enable deposit to yield bearing strategy. 
+    Conduit will enable deposits to yield bearing strategy. 
     Home Loan Strategy is one of them which allows RWA review and loan to be granted by the conduit . 
     So the test has
         depositing to the conduit, 
