@@ -33,10 +33,10 @@
   "methodIdentifiers": {
     "wards(address)": "bf353dbb"
   },
-  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"}],\"name\":\"wards\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"relied\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"wards(address)\":{\"details\":\"Returns a 0 or 1 depending on if the user has been added as an admin.\",\"returns\":{\"relied\":\"The value of the user's admin status.\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/upgradeable-proxy/src/interfaces/IUpgradeableProxied.sol\":\"IUpgradeableProxied\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":dss-allocator/=lib/dss-allocator/\",\":dss-interfaces/=lib/dss-test/lib/dss-interfaces/src/\",\":dss-test/=lib/dss-test/src/\",\":forge-std/=lib/forge-std/src/\",\":mock-erc20/=lib/mock-erc20/\",\":upgradeable-proxy/=lib/upgradeable-proxy/src/\"]},\"sources\":{\"lib/upgradeable-proxy/src/interfaces/IUpgradeableProxied.sol\":{\"keccak256\":\"0xd5aa4b5f0ab4d9192cba580ee4c34fe08276d80f0b4f70dde4e96b025d4d91a6\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://6730289331a620f2c39814c68c0f4528de6d49be692b30109fa795189a68e6f0\",\"dweb:/ipfs/QmW48izgL6Kf4AgByeRET66RtiTym89FcALSitA78yX6SG\"]}},\"version\":1}",
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"}],\"name\":\"wards\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"relied\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"wards(address)\":{\"details\":\"Returns a 0 or 1 depending on if the user has been added as an admin.\",\"returns\":{\"relied\":\"The value of the user's admin status.\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/upgradeable-proxy/src/interfaces/IUpgradeableProxied.sol\":\"IUpgradeableProxied\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":dss-allocator/=lib/dss-allocator/\",\":dss-interfaces/=lib/dss-test/lib/dss-interfaces/src/\",\":dss-test/=lib/dss-test/src/\",\":forge-std/=lib/forge-std/src/\",\":mock-erc20/=lib/mock-erc20/\",\":upgradeable-proxy/=lib/upgradeable-proxy/src/\"]},\"sources\":{\"lib/upgradeable-proxy/src/interfaces/IUpgradeableProxied.sol\":{\"keccak256\":\"0xd5aa4b5f0ab4d9192cba580ee4c34fe08276d80f0b4f70dde4e96b025d4d91a6\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://6730289331a620f2c39814c68c0f4528de6d49be692b30109fa795189a68e6f0\",\"dweb:/ipfs/QmW48izgL6Kf4AgByeRET66RtiTym89FcALSitA78yX6SG\"]}},\"version\":1}",
   "metadata": {
     "compiler": {
-      "version": "0.8.20+commit.a1b79de6"
+      "version": "0.8.21+commit.d9974bed"
     },
     "language": "Solidity",
     "output": {
@@ -81,13 +81,13 @@
     },
     "settings": {
       "remappings": [
-        ":ds-test/=lib/forge-std/lib/ds-test/src/",
-        ":dss-allocator/=lib/dss-allocator/",
-        ":dss-interfaces/=lib/dss-test/lib/dss-interfaces/src/",
-        ":dss-test/=lib/dss-test/src/",
-        ":forge-std/=lib/forge-std/src/",
-        ":mock-erc20/=lib/mock-erc20/",
-        ":upgradeable-proxy/=lib/upgradeable-proxy/src/"
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "dss-allocator/=lib/dss-allocator/",
+        "dss-interfaces/=lib/dss-test/lib/dss-interfaces/src/",
+        "dss-test/=lib/dss-test/src/",
+        "forge-std/=lib/forge-std/src/",
+        "mock-erc20/=lib/mock-erc20/",
+        "upgradeable-proxy/=lib/upgradeable-proxy/src/"
       ],
       "optimizer": {
         "enabled": true,
@@ -115,19 +115,19 @@
   },
   "ast": {
     "absolutePath": "lib/upgradeable-proxy/src/interfaces/IUpgradeableProxied.sol",
-    "id": 55675,
+    "id": 42953,
     "exportedSymbols": {
       "IUpgradeableProxied": [
-        55674
+        42952
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "46:297:95",
+    "src": "46:297:21",
     "nodes": [
       {
-        "id": 55665,
+        "id": 42943,
         "nodeType": "PragmaDirective",
-        "src": "46:23:95",
+        "src": "46:23:21",
         "nodes": [],
         "literals": [
           "solidity",
@@ -137,19 +137,19 @@
         ]
       },
       {
-        "id": 55674,
+        "id": 42952,
         "nodeType": "ContractDefinition",
-        "src": "71:271:95",
+        "src": "71:271:21",
         "nodes": [
           {
-            "id": 55673,
+            "id": 42951,
             "nodeType": "FunctionDefinition",
-            "src": "271:68:95",
+            "src": "271:68:21",
             "nodes": [],
             "documentation": {
-              "id": 55666,
+              "id": 42944,
               "nodeType": "StructuredDocumentation",
-              "src": "108:158:95",
+              "src": "108:158:21",
               "text": "  @dev    Returns a 0 or 1 depending on if the user has been added as an admin.\n  @return relied The value of the user's admin status."
             },
             "functionSelector": "bf353dbb",
@@ -157,20 +157,20 @@
             "kind": "function",
             "modifiers": [],
             "name": "wards",
-            "nameLocation": "280:5:95",
+            "nameLocation": "280:5:21",
             "parameters": {
-              "id": 55669,
+              "id": 42947,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 55668,
+                  "id": 42946,
                   "mutability": "mutable",
                   "name": "user",
-                  "nameLocation": "294:4:95",
+                  "nameLocation": "294:4:21",
                   "nodeType": "VariableDeclaration",
-                  "scope": 55673,
-                  "src": "286:12:95",
+                  "scope": 42951,
+                  "src": "286:12:21",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -178,10 +178,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 55667,
+                    "id": 42945,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "286:7:95",
+                    "src": "286:7:21",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -191,21 +191,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "285:14:95"
+              "src": "285:14:21"
             },
             "returnParameters": {
-              "id": 55672,
+              "id": 42950,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 55671,
+                  "id": 42949,
                   "mutability": "mutable",
                   "name": "relied",
-                  "nameLocation": "331:6:95",
+                  "nameLocation": "331:6:21",
                   "nodeType": "VariableDeclaration",
-                  "scope": 55673,
-                  "src": "323:14:95",
+                  "scope": 42951,
+                  "src": "323:14:21",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -213,10 +213,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 55670,
+                    "id": 42948,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "323:7:95",
+                    "src": "323:7:21",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -225,9 +225,9 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "322:16:95"
+              "src": "322:16:21"
             },
-            "scope": 55674,
+            "scope": 42952,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
@@ -240,16 +240,16 @@
         "contractKind": "interface",
         "fullyImplemented": false,
         "linearizedBaseContracts": [
-          55674
+          42952
         ],
         "name": "IUpgradeableProxied",
-        "nameLocation": "81:19:95",
-        "scope": 55675,
+        "nameLocation": "81:19:21",
+        "scope": 42953,
         "usedErrors": [],
         "usedEvents": []
       }
     ],
     "license": "AGPL-3.0-or-later"
   },
-  "id": 95
+  "id": 21
 }

@@ -179,10 +179,10 @@
     "maxWithdraw(bytes32,address)": "e0245d33",
     "withdraw(bytes32,address,uint256)": "a6fb97d1"
   },
-  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"ilk\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"origin\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"Deposit\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"ilk\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"destination\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"Withdraw\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"ilk\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"deposit\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"ilk\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"maxDeposit\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"maxDeposit_\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"ilk\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"maxWithdraw\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"maxWithdraw_\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"ilk\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"maxAmount\",\"type\":\"uint256\"}],\"name\":\"withdraw\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Conduits are to be used to manage investment positions for multiple Allocators.\",\"events\":{\"Deposit(bytes32,address,address,uint256)\":{\"details\":\"Event emitted when a deposit is made to the Conduit.\",\"params\":{\"amount\":\"The amount of asset deposited.\",\"asset\":\"The address of the asset deposited.\",\"ilk\":\"The unique identifier of the ilk.\",\"origin\":\"The address where the asset is coming from.\"}},\"Withdraw(bytes32,address,address,uint256)\":{\"details\":\"Event emitted when a withdrawal is made from the Conduit.\",\"params\":{\"amount\":\"The amount of asset withdrawn.\",\"asset\":\"The address of the asset withdrawn.\",\"destination\":\"The address where the asset is sent.\",\"ilk\":\"The unique identifier of the ilk.\"}}},\"kind\":\"dev\",\"methods\":{\"deposit(bytes32,address,uint256)\":{\"details\":\"Function for depositing tokens into a Fund Manager.\",\"params\":{\"amount\":\"The amount of tokens to deposit.\",\"asset\":\"The asset to deposit.\",\"ilk\":\"The unique identifier of the ilk.\"}},\"maxDeposit(bytes32,address)\":{\"details\":\"Function to get the maximum deposit possible for a specific asset and ilk.\",\"params\":{\"asset\":\"The asset to check.\",\"ilk\":\"The unique identifier of the ilk.\"},\"returns\":{\"maxDeposit_\":\"The maximum possible deposit for the asset.\"}},\"maxWithdraw(bytes32,address)\":{\"details\":\"Function to get the maximum withdrawal possible for a specific asset and ilk.\",\"params\":{\"asset\":\"The asset to check.\",\"ilk\":\"The unique identifier of the ilk.\"},\"returns\":{\"maxWithdraw_\":\"The maximum possible withdrawal for the asset.\"}},\"withdraw(bytes32,address,uint256)\":{\"details\":\"Function for withdrawing tokens from a Fund Manager.\",\"params\":{\"asset\":\"The asset to withdraw.\",\"ilk\":\"The unique identifier of the ilk.\",\"maxAmount\":\"The max amount of tokens to withdraw. Setting to \\\"type(uint256).max\\\" will ensure to withdraw all available liquidity.\"},\"returns\":{\"amount\":\"     The amount of tokens withdrawn.\"}}},\"title\":\"IAllocatorConduit\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/dss-allocator/src/interfaces/IAllocatorConduit.sol\":\"IAllocatorConduit\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":dss-allocator/=lib/dss-allocator/\",\":dss-interfaces/=lib/dss-test/lib/dss-interfaces/src/\",\":dss-test/=lib/dss-test/src/\",\":forge-std/=lib/forge-std/src/\",\":mock-erc20/=lib/mock-erc20/\",\":upgradeable-proxy/=lib/upgradeable-proxy/src/\"]},\"sources\":{\"lib/dss-allocator/src/interfaces/IAllocatorConduit.sol\":{\"keccak256\":\"0x0cae7155239f95952ccd98619b5cd007ddfef2a6113d1545dab5ef95099fee92\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://813e04c903eb1dfbf6338419290869498b1fb79fba3fe8d5a401453f21cb4df8\",\"dweb:/ipfs/QmfY9SP2wKeJmsW5diAhgyMiqfjwvUZEGPymFyB5ZCMj57\"]}},\"version\":1}",
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"ilk\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"origin\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"Deposit\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"ilk\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"destination\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"Withdraw\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"ilk\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"deposit\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"ilk\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"maxDeposit\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"maxDeposit_\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"ilk\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"maxWithdraw\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"maxWithdraw_\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"ilk\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"maxAmount\",\"type\":\"uint256\"}],\"name\":\"withdraw\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Conduits are to be used to manage investment positions for multiple Allocators.\",\"events\":{\"Deposit(bytes32,address,address,uint256)\":{\"details\":\"Event emitted when a deposit is made to the Conduit.\",\"params\":{\"amount\":\"The amount of asset deposited.\",\"asset\":\"The address of the asset deposited.\",\"ilk\":\"The unique identifier of the ilk.\",\"origin\":\"The address where the asset is coming from.\"}},\"Withdraw(bytes32,address,address,uint256)\":{\"details\":\"Event emitted when a withdrawal is made from the Conduit.\",\"params\":{\"amount\":\"The amount of asset withdrawn.\",\"asset\":\"The address of the asset withdrawn.\",\"destination\":\"The address where the asset is sent.\",\"ilk\":\"The unique identifier of the ilk.\"}}},\"kind\":\"dev\",\"methods\":{\"deposit(bytes32,address,uint256)\":{\"details\":\"Function for depositing tokens into a Fund Manager.\",\"params\":{\"amount\":\"The amount of tokens to deposit.\",\"asset\":\"The asset to deposit.\",\"ilk\":\"The unique identifier of the ilk.\"}},\"maxDeposit(bytes32,address)\":{\"details\":\"Function to get the maximum deposit possible for a specific asset and ilk.\",\"params\":{\"asset\":\"The asset to check.\",\"ilk\":\"The unique identifier of the ilk.\"},\"returns\":{\"maxDeposit_\":\"The maximum possible deposit for the asset.\"}},\"maxWithdraw(bytes32,address)\":{\"details\":\"Function to get the maximum withdrawal possible for a specific asset and ilk.\",\"params\":{\"asset\":\"The asset to check.\",\"ilk\":\"The unique identifier of the ilk.\"},\"returns\":{\"maxWithdraw_\":\"The maximum possible withdrawal for the asset.\"}},\"withdraw(bytes32,address,uint256)\":{\"details\":\"Function for withdrawing tokens from a Fund Manager.\",\"params\":{\"asset\":\"The asset to withdraw.\",\"ilk\":\"The unique identifier of the ilk.\",\"maxAmount\":\"The max amount of tokens to withdraw. Setting to \\\"type(uint256).max\\\" will ensure to withdraw all available liquidity.\"},\"returns\":{\"amount\":\"     The amount of tokens withdrawn.\"}}},\"title\":\"IAllocatorConduit\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/dss-allocator/src/interfaces/IAllocatorConduit.sol\":\"IAllocatorConduit\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":dss-allocator/=lib/dss-allocator/\",\":dss-interfaces/=lib/dss-test/lib/dss-interfaces/src/\",\":dss-test/=lib/dss-test/src/\",\":forge-std/=lib/forge-std/src/\",\":mock-erc20/=lib/mock-erc20/\",\":upgradeable-proxy/=lib/upgradeable-proxy/src/\"]},\"sources\":{\"lib/dss-allocator/src/interfaces/IAllocatorConduit.sol\":{\"keccak256\":\"0x0cae7155239f95952ccd98619b5cd007ddfef2a6113d1545dab5ef95099fee92\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://813e04c903eb1dfbf6338419290869498b1fb79fba3fe8d5a401453f21cb4df8\",\"dweb:/ipfs/QmfY9SP2wKeJmsW5diAhgyMiqfjwvUZEGPymFyB5ZCMj57\"]}},\"version\":1}",
   "metadata": {
     "compiler": {
-      "version": "0.8.20+commit.a1b79de6"
+      "version": "0.8.21+commit.d9974bed"
     },
     "language": "Solidity",
     "output": {
@@ -402,13 +402,13 @@
     },
     "settings": {
       "remappings": [
-        ":ds-test/=lib/forge-std/lib/ds-test/src/",
-        ":dss-allocator/=lib/dss-allocator/",
-        ":dss-interfaces/=lib/dss-test/lib/dss-interfaces/src/",
-        ":dss-test/=lib/dss-test/src/",
-        ":forge-std/=lib/forge-std/src/",
-        ":mock-erc20/=lib/mock-erc20/",
-        ":upgradeable-proxy/=lib/upgradeable-proxy/src/"
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "dss-allocator/=lib/dss-allocator/",
+        "dss-interfaces/=lib/dss-test/lib/dss-interfaces/src/",
+        "dss-test/=lib/dss-test/src/",
+        "forge-std/=lib/forge-std/src/",
+        "mock-erc20/=lib/mock-erc20/",
+        "upgradeable-proxy/=lib/upgradeable-proxy/src/"
       ],
       "optimizer": {
         "enabled": true,
@@ -436,19 +436,19 @@
   },
   "ast": {
     "absolutePath": "lib/dss-allocator/src/interfaces/IAllocatorConduit.sol",
-    "id": 567,
+    "id": 68,
     "exportedSymbols": {
       "IAllocatorConduit": [
-        566
+        67
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "791:2644:2",
+    "src": "791:2644:0",
     "nodes": [
       {
-        "id": 500,
+        "id": 1,
         "nodeType": "PragmaDirective",
-        "src": "791:24:2",
+        "src": "791:24:0",
         "nodes": [],
         "literals": [
           "solidity",
@@ -458,39 +458,39 @@
         ]
       },
       {
-        "id": 566,
+        "id": 67,
         "nodeType": "ContractDefinition",
-        "src": "945:2489:2",
+        "src": "945:2489:0",
         "nodes": [
           {
-            "id": 512,
+            "id": 13,
             "nodeType": "EventDefinition",
-            "src": "1297:90:2",
+            "src": "1297:90:0",
             "nodes": [],
             "anonymous": false,
             "documentation": {
-              "id": 502,
+              "id": 3,
               "nodeType": "StructuredDocumentation",
-              "src": "980:312:2",
+              "src": "980:312:0",
               "text": "  @dev   Event emitted when a deposit is made to the Conduit.\n  @param ilk    The unique identifier of the ilk.\n  @param asset  The address of the asset deposited.\n  @param origin The address where the asset is coming from.\n  @param amount The amount of asset deposited."
             },
             "eventSelector": "c95ddcaddf83340b68d0d44c01b1703f5d28d0611a3fd87e69d79ba7e2ac21d3",
             "name": "Deposit",
-            "nameLocation": "1303:7:2",
+            "nameLocation": "1303:7:0",
             "parameters": {
-              "id": 511,
+              "id": 12,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 504,
+                  "id": 5,
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "ilk",
-                  "nameLocation": "1327:3:2",
+                  "nameLocation": "1327:3:0",
                   "nodeType": "VariableDeclaration",
-                  "scope": 512,
-                  "src": "1311:19:2",
+                  "scope": 13,
+                  "src": "1311:19:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -498,10 +498,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 503,
+                    "id": 4,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1311:7:2",
+                    "src": "1311:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -511,14 +511,14 @@
                 },
                 {
                   "constant": false,
-                  "id": 506,
+                  "id": 7,
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "asset",
-                  "nameLocation": "1348:5:2",
+                  "nameLocation": "1348:5:0",
                   "nodeType": "VariableDeclaration",
-                  "scope": 512,
-                  "src": "1332:21:2",
+                  "scope": 13,
+                  "src": "1332:21:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -526,10 +526,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 505,
+                    "id": 6,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1332:7:2",
+                    "src": "1332:7:0",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -540,14 +540,14 @@
                 },
                 {
                   "constant": false,
-                  "id": 508,
+                  "id": 9,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "origin",
-                  "nameLocation": "1363:6:2",
+                  "nameLocation": "1363:6:0",
                   "nodeType": "VariableDeclaration",
-                  "scope": 512,
-                  "src": "1355:14:2",
+                  "scope": 13,
+                  "src": "1355:14:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -555,10 +555,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 507,
+                    "id": 8,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1355:7:2",
+                    "src": "1355:7:0",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -569,14 +569,14 @@
                 },
                 {
                   "constant": false,
-                  "id": 510,
+                  "id": 11,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "amount",
-                  "nameLocation": "1379:6:2",
+                  "nameLocation": "1379:6:0",
                   "nodeType": "VariableDeclaration",
-                  "scope": 512,
-                  "src": "1371:14:2",
+                  "scope": 13,
+                  "src": "1371:14:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -584,10 +584,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 509,
+                    "id": 10,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1371:7:2",
+                    "src": "1371:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -596,38 +596,38 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1310:76:2"
+              "src": "1310:76:0"
             }
           },
           {
-            "id": 523,
+            "id": 24,
             "nodeType": "EventDefinition",
-            "src": "1728:96:2",
+            "src": "1728:96:0",
             "nodes": [],
             "anonymous": false,
             "documentation": {
-              "id": 513,
+              "id": 14,
               "nodeType": "StructuredDocumentation",
-              "src": "1393:330:2",
+              "src": "1393:330:0",
               "text": "  @dev   Event emitted when a withdrawal is made from the Conduit.\n  @param ilk         The unique identifier of the ilk.\n  @param asset       The address of the asset withdrawn.\n  @param destination The address where the asset is sent.\n  @param amount      The amount of asset withdrawn."
             },
             "eventSelector": "cd6ac346191b4b7531743e58f243dd4d350a52a9186641c1e5eac22b95aaedbe",
             "name": "Withdraw",
-            "nameLocation": "1734:8:2",
+            "nameLocation": "1734:8:0",
             "parameters": {
-              "id": 522,
+              "id": 23,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 515,
+                  "id": 16,
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "ilk",
-                  "nameLocation": "1759:3:2",
+                  "nameLocation": "1759:3:0",
                   "nodeType": "VariableDeclaration",
-                  "scope": 523,
-                  "src": "1743:19:2",
+                  "scope": 24,
+                  "src": "1743:19:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -635,10 +635,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 514,
+                    "id": 15,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1743:7:2",
+                    "src": "1743:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -648,14 +648,14 @@
                 },
                 {
                   "constant": false,
-                  "id": 517,
+                  "id": 18,
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "asset",
-                  "nameLocation": "1780:5:2",
+                  "nameLocation": "1780:5:0",
                   "nodeType": "VariableDeclaration",
-                  "scope": 523,
-                  "src": "1764:21:2",
+                  "scope": 24,
+                  "src": "1764:21:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -663,10 +663,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 516,
+                    "id": 17,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1764:7:2",
+                    "src": "1764:7:0",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -677,14 +677,14 @@
                 },
                 {
                   "constant": false,
-                  "id": 519,
+                  "id": 20,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "destination",
-                  "nameLocation": "1795:11:2",
+                  "nameLocation": "1795:11:0",
                   "nodeType": "VariableDeclaration",
-                  "scope": 523,
-                  "src": "1787:19:2",
+                  "scope": 24,
+                  "src": "1787:19:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -692,10 +692,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 518,
+                    "id": 19,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1787:7:2",
+                    "src": "1787:7:0",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -706,14 +706,14 @@
                 },
                 {
                   "constant": false,
-                  "id": 521,
+                  "id": 22,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "amount",
-                  "nameLocation": "1816:6:2",
+                  "nameLocation": "1816:6:0",
                   "nodeType": "VariableDeclaration",
-                  "scope": 523,
-                  "src": "1808:14:2",
+                  "scope": 24,
+                  "src": "1808:14:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -721,10 +721,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 520,
+                    "id": 21,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1808:7:2",
+                    "src": "1808:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -733,18 +733,18 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1742:81:2"
+              "src": "1742:81:0"
             }
           },
           {
-            "id": 533,
+            "id": 34,
             "nodeType": "FunctionDefinition",
-            "src": "2068:70:2",
+            "src": "2068:70:0",
             "nodes": [],
             "documentation": {
-              "id": 524,
+              "id": 25,
               "nodeType": "StructuredDocumentation",
-              "src": "1830:233:2",
+              "src": "1830:233:0",
               "text": "  @dev   Function for depositing tokens into a Fund Manager.\n  @param ilk    The unique identifier of the ilk.\n  @param asset  The asset to deposit.\n  @param amount The amount of tokens to deposit."
             },
             "functionSelector": "d954863c",
@@ -752,20 +752,20 @@
             "kind": "function",
             "modifiers": [],
             "name": "deposit",
-            "nameLocation": "2077:7:2",
+            "nameLocation": "2077:7:0",
             "parameters": {
-              "id": 531,
+              "id": 32,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 526,
+                  "id": 27,
                   "mutability": "mutable",
                   "name": "ilk",
-                  "nameLocation": "2093:3:2",
+                  "nameLocation": "2093:3:0",
                   "nodeType": "VariableDeclaration",
-                  "scope": 533,
-                  "src": "2085:11:2",
+                  "scope": 34,
+                  "src": "2085:11:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -773,10 +773,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 525,
+                    "id": 26,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2085:7:2",
+                    "src": "2085:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -786,13 +786,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 528,
+                  "id": 29,
                   "mutability": "mutable",
                   "name": "asset",
-                  "nameLocation": "2106:5:2",
+                  "nameLocation": "2106:5:0",
                   "nodeType": "VariableDeclaration",
-                  "scope": 533,
-                  "src": "2098:13:2",
+                  "scope": 34,
+                  "src": "2098:13:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -800,10 +800,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 527,
+                    "id": 28,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2098:7:2",
+                    "src": "2098:7:0",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -814,13 +814,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 530,
+                  "id": 31,
                   "mutability": "mutable",
                   "name": "amount",
-                  "nameLocation": "2121:6:2",
+                  "nameLocation": "2121:6:0",
                   "nodeType": "VariableDeclaration",
-                  "scope": 533,
-                  "src": "2113:14:2",
+                  "scope": 34,
+                  "src": "2113:14:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -828,10 +828,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 529,
+                    "id": 30,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2113:7:2",
+                    "src": "2113:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -840,28 +840,28 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2084:44:2"
+              "src": "2084:44:0"
             },
             "returnParameters": {
-              "id": 532,
+              "id": 33,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "2137:0:2"
+              "src": "2137:0:0"
             },
-            "scope": 566,
+            "scope": 67,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
-            "id": 545,
+            "id": 46,
             "nodeType": "FunctionDefinition",
-            "src": "2547:99:2",
+            "src": "2547:99:0",
             "nodes": [],
             "documentation": {
-              "id": 534,
+              "id": 35,
               "nodeType": "StructuredDocumentation",
-              "src": "2144:398:2",
+              "src": "2144:398:0",
               "text": "  @dev   Function for withdrawing tokens from a Fund Manager.\n  @param  ilk         The unique identifier of the ilk.\n  @param  asset       The asset to withdraw.\n  @param  maxAmount   The max amount of tokens to withdraw. Setting to \"type(uint256).max\" will ensure to withdraw all available liquidity.\n  @return amount      The amount of tokens withdrawn."
             },
             "functionSelector": "a6fb97d1",
@@ -869,20 +869,20 @@
             "kind": "function",
             "modifiers": [],
             "name": "withdraw",
-            "nameLocation": "2556:8:2",
+            "nameLocation": "2556:8:0",
             "parameters": {
-              "id": 541,
+              "id": 42,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 536,
+                  "id": 37,
                   "mutability": "mutable",
                   "name": "ilk",
-                  "nameLocation": "2573:3:2",
+                  "nameLocation": "2573:3:0",
                   "nodeType": "VariableDeclaration",
-                  "scope": 545,
-                  "src": "2565:11:2",
+                  "scope": 46,
+                  "src": "2565:11:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -890,10 +890,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 535,
+                    "id": 36,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2565:7:2",
+                    "src": "2565:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -903,13 +903,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 538,
+                  "id": 39,
                   "mutability": "mutable",
                   "name": "asset",
-                  "nameLocation": "2586:5:2",
+                  "nameLocation": "2586:5:0",
                   "nodeType": "VariableDeclaration",
-                  "scope": 545,
-                  "src": "2578:13:2",
+                  "scope": 46,
+                  "src": "2578:13:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -917,10 +917,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 537,
+                    "id": 38,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2578:7:2",
+                    "src": "2578:7:0",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -931,13 +931,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 540,
+                  "id": 41,
                   "mutability": "mutable",
                   "name": "maxAmount",
-                  "nameLocation": "2601:9:2",
+                  "nameLocation": "2601:9:0",
                   "nodeType": "VariableDeclaration",
-                  "scope": 545,
-                  "src": "2593:17:2",
+                  "scope": 46,
+                  "src": "2593:17:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -945,10 +945,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 539,
+                    "id": 40,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2593:7:2",
+                    "src": "2593:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -957,21 +957,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2564:47:2"
+              "src": "2564:47:0"
             },
             "returnParameters": {
-              "id": 544,
+              "id": 45,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 543,
+                  "id": 44,
                   "mutability": "mutable",
                   "name": "amount",
-                  "nameLocation": "2638:6:2",
+                  "nameLocation": "2638:6:0",
                   "nodeType": "VariableDeclaration",
-                  "scope": 545,
-                  "src": "2630:14:2",
+                  "scope": 46,
+                  "src": "2630:14:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -979,10 +979,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 542,
+                    "id": 43,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2630:7:2",
+                    "src": "2630:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -991,22 +991,22 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2629:16:2"
+              "src": "2629:16:0"
             },
-            "scope": 566,
+            "scope": 67,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
-            "id": 555,
+            "id": 56,
             "nodeType": "FunctionDefinition",
-            "src": "2941:92:2",
+            "src": "2941:92:0",
             "nodes": [],
             "documentation": {
-              "id": 546,
+              "id": 47,
               "nodeType": "StructuredDocumentation",
-              "src": "2652:284:2",
+              "src": "2652:284:0",
               "text": "  @dev    Function to get the maximum deposit possible for a specific asset and ilk.\n  @param  ilk         The unique identifier of the ilk.\n  @param  asset       The asset to check.\n  @return maxDeposit_ The maximum possible deposit for the asset."
             },
             "functionSelector": "c4f72997",
@@ -1014,20 +1014,20 @@
             "kind": "function",
             "modifiers": [],
             "name": "maxDeposit",
-            "nameLocation": "2950:10:2",
+            "nameLocation": "2950:10:0",
             "parameters": {
-              "id": 551,
+              "id": 52,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 548,
+                  "id": 49,
                   "mutability": "mutable",
                   "name": "ilk",
-                  "nameLocation": "2969:3:2",
+                  "nameLocation": "2969:3:0",
                   "nodeType": "VariableDeclaration",
-                  "scope": 555,
-                  "src": "2961:11:2",
+                  "scope": 56,
+                  "src": "2961:11:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1035,10 +1035,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 547,
+                    "id": 48,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2961:7:2",
+                    "src": "2961:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -1048,13 +1048,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 550,
+                  "id": 51,
                   "mutability": "mutable",
                   "name": "asset",
-                  "nameLocation": "2982:5:2",
+                  "nameLocation": "2982:5:0",
                   "nodeType": "VariableDeclaration",
-                  "scope": 555,
-                  "src": "2974:13:2",
+                  "scope": 56,
+                  "src": "2974:13:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1062,10 +1062,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 549,
+                    "id": 50,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2974:7:2",
+                    "src": "2974:7:0",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1075,21 +1075,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2960:28:2"
+              "src": "2960:28:0"
             },
             "returnParameters": {
-              "id": 554,
+              "id": 55,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 553,
+                  "id": 54,
                   "mutability": "mutable",
                   "name": "maxDeposit_",
-                  "nameLocation": "3020:11:2",
+                  "nameLocation": "3020:11:0",
                   "nodeType": "VariableDeclaration",
-                  "scope": 555,
-                  "src": "3012:19:2",
+                  "scope": 56,
+                  "src": "3012:19:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1097,10 +1097,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 552,
+                    "id": 53,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "3012:7:2",
+                    "src": "3012:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1109,22 +1109,22 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "3011:21:2"
+              "src": "3011:21:0"
             },
-            "scope": 566,
+            "scope": 67,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
-            "id": 565,
+            "id": 66,
             "nodeType": "FunctionDefinition",
-            "src": "3337:94:2",
+            "src": "3337:94:0",
             "nodes": [],
             "documentation": {
-              "id": 556,
+              "id": 57,
               "nodeType": "StructuredDocumentation",
-              "src": "3039:293:2",
+              "src": "3039:293:0",
               "text": "  @dev    Function to get the maximum withdrawal possible for a specific asset and ilk.\n  @param  ilk          The unique identifier of the ilk.\n  @param  asset        The asset to check.\n  @return maxWithdraw_ The maximum possible withdrawal for the asset."
             },
             "functionSelector": "e0245d33",
@@ -1132,20 +1132,20 @@
             "kind": "function",
             "modifiers": [],
             "name": "maxWithdraw",
-            "nameLocation": "3346:11:2",
+            "nameLocation": "3346:11:0",
             "parameters": {
-              "id": 561,
+              "id": 62,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 558,
+                  "id": 59,
                   "mutability": "mutable",
                   "name": "ilk",
-                  "nameLocation": "3366:3:2",
+                  "nameLocation": "3366:3:0",
                   "nodeType": "VariableDeclaration",
-                  "scope": 565,
-                  "src": "3358:11:2",
+                  "scope": 66,
+                  "src": "3358:11:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1153,10 +1153,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 557,
+                    "id": 58,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "3358:7:2",
+                    "src": "3358:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -1166,13 +1166,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 560,
+                  "id": 61,
                   "mutability": "mutable",
                   "name": "asset",
-                  "nameLocation": "3379:5:2",
+                  "nameLocation": "3379:5:0",
                   "nodeType": "VariableDeclaration",
-                  "scope": 565,
-                  "src": "3371:13:2",
+                  "scope": 66,
+                  "src": "3371:13:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1180,10 +1180,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 559,
+                    "id": 60,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "3371:7:2",
+                    "src": "3371:7:0",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1193,21 +1193,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "3357:28:2"
+              "src": "3357:28:0"
             },
             "returnParameters": {
-              "id": 564,
+              "id": 65,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 563,
+                  "id": 64,
                   "mutability": "mutable",
                   "name": "maxWithdraw_",
-                  "nameLocation": "3417:12:2",
+                  "nameLocation": "3417:12:0",
                   "nodeType": "VariableDeclaration",
-                  "scope": 565,
-                  "src": "3409:20:2",
+                  "scope": 66,
+                  "src": "3409:20:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1215,10 +1215,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 562,
+                    "id": 63,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "3409:7:2",
+                    "src": "3409:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1227,9 +1227,9 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "3408:22:2"
+              "src": "3408:22:0"
             },
-            "scope": 566,
+            "scope": 67,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
@@ -1241,26 +1241,26 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "documentation": {
-          "id": 501,
+          "id": 2,
           "nodeType": "StructuredDocumentation",
-          "src": "817:127:2",
+          "src": "817:127:0",
           "text": "  @title IAllocatorConduit\n  @dev   Conduits are to be used to manage investment positions for multiple Allocators."
         },
         "fullyImplemented": false,
         "linearizedBaseContracts": [
-          566
+          67
         ],
         "name": "IAllocatorConduit",
-        "nameLocation": "955:17:2",
-        "scope": 567,
+        "nameLocation": "955:17:0",
+        "scope": 68,
         "usedErrors": [],
         "usedEvents": [
-          512,
-          523
+          13,
+          24
         ]
       }
     ],
     "license": "AGPL-3.0-or-later"
   },
-  "id": 2
+  "id": 0
 }

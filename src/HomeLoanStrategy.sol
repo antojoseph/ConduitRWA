@@ -52,7 +52,6 @@ contract HomeLoanStrategy is ReentrancyGuard {
         homeLoans[loanAddress] = loanValue;
         homeLoanTimestamps[loanAddress] = block.timestamp;  // Store the timestamp of the loan
         loanAddresses.push(loanAddress);
-        console.log(loanAddress);
     }
 
     function makePaymentForLoan(address loanAddress, uint256 payment) external returns (uint256) {

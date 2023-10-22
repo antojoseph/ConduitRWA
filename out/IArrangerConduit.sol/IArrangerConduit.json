@@ -738,10 +738,10 @@
     "withdrawableFunds(bytes32,address)": "d31d2fad",
     "withdrawals(bytes32,address)": "74d47dc5"
   },
-  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"fundRequestId\",\"type\":\"uint256\"}],\"name\":\"CancelFundRequest\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"ilk\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"origin\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"Deposit\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"DrawFunds\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"what\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"data\",\"type\":\"address\"}],\"name\":\"File\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"ilk\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"fundRequestId\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"info\",\"type\":\"string\"}],\"name\":\"RequestFunds\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"ilk\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"fundRequestId\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amountRequested\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"returnAmount\",\"type\":\"uint256\"}],\"name\":\"ReturnFunds\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"ilk\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"destination\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"Withdraw\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"arranger\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"arranger_\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"fundRequestId\",\"type\":\"uint256\"}],\"name\":\"cancelFundRequest\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"ilk\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"deposit\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"ilk\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"deposits\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"deposits_\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"drawFunds\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"drawableFunds\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"drawableFunds_\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"what\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"data\",\"type\":\"address\"}],\"name\":\"file\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"fundRequestId\",\"type\":\"uint256\"}],\"name\":\"getFundRequest\",\"outputs\":[{\"components\":[{\"internalType\":\"enum IArrangerConduit.StatusEnum\",\"name\":\"status\",\"type\":\"uint8\"},{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"internalType\":\"bytes32\",\"name\":\"ilk\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"amountRequested\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountFilled\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"info\",\"type\":\"string\"}],\"internalType\":\"struct IArrangerConduit.FundRequest\",\"name\":\"fundRequest\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getFundRequestsLength\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"fundRequestsLength\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"fundRequestId\",\"type\":\"uint256\"}],\"name\":\"isCancelable\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"isCancelable_\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"ilk\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"maxDeposit\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"maxDeposit_\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"ilk\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"maxWithdraw\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"maxWithdraw_\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"registry\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"registry_\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"ilk\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"info\",\"type\":\"string\"}],\"name\":\"requestFunds\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"fundRequestId\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"ilk\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"requestedFunds\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"requestedFunds_\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"fundRequestId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"returnFunds\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"roles\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"roles_\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"totalDeposits\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"totalDeposits_\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"totalRequestedFunds\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"totalRequestedFunds_\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"totalWithdrawableFunds\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"totalWithdrawableFunds_\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"totalWithdrawals\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"totalWithdrawals_\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"ilk\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"maxAmount\",\"type\":\"uint256\"}],\"name\":\"withdraw\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"ilk\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"withdrawableFunds\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"withdrawableFunds_\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"ilk\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"withdrawals\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"withdrawals_\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Conduits are to be used to manage positions for multiple Allocators.         After funds are deposited into a Conduit, they can be deployed by Arrangers to earn         yield. When Allocators want funds back, they can request funds from the Arrangers and         then withdraw once liquidity is available.\",\"events\":{\"CancelFundRequest(uint256)\":{\"details\":\"Event emitted when a fund request is cancelled.\",\"params\":{\"fundRequestId\":\"The ID of the cancelled fund request.\"}},\"Deposit(bytes32,address,address,uint256)\":{\"details\":\"Event emitted when a deposit is made to the Conduit.\",\"params\":{\"amount\":\"The amount of asset deposited.\",\"asset\":\"The address of the asset deposited.\",\"ilk\":\"The unique identifier of the ilk.\",\"origin\":\"The address where the asset is coming from.\"}},\"DrawFunds(address,uint256)\":{\"details\":\"Event emitted when funds are drawn from the Conduit by the Arranger.\",\"params\":{\"amount\":\"The amount of asset to be withdrawn.\",\"asset\":\"The address of the asset to be withdrawn.\"}},\"File(bytes32,address)\":{\"details\":\"Event emitted when a value is changed by an admin.\",\"params\":{\"data\":\"The new value of the identifier.\",\"what\":\"The identifier of the value changed.\"}},\"RequestFunds(bytes32,address,uint256,uint256,string)\":{\"details\":\"Event emitted when a fund request is made.\",\"params\":{\"amount\":\"The amount of asset to be withdrawn.\",\"asset\":\"The address of the asset to be withdrawn.\",\"fundRequestId\":\"The ID of the fund request.\",\"ilk\":\"The unique identifier of the ilk.\",\"info\":\"Arbitrary string to provide additional info to the Arranger.\"}},\"ReturnFunds(bytes32,address,uint256,uint256,uint256)\":{\"details\":\"Event emitted when an Arranger returns funds to the Conduit to fill a fund request.\",\"params\":{\"amountRequested\":\"The amount of asset that was requested by the ilk to be withdrawn.\",\"asset\":\"The address of the asset to be withdrawn.\",\"fundRequestId\":\"The ID of the fund request.\",\"ilk\":\"The unique identifier of the ilk.\",\"returnAmount\":\"The resulting amount that was returned by the Arranger.\"}},\"Withdraw(bytes32,address,address,uint256)\":{\"details\":\"Event emitted when a withdrawal is made from the Conduit.\",\"params\":{\"amount\":\"The amount of asset withdrawn.\",\"asset\":\"The address of the asset withdrawn.\",\"destination\":\"The address where the asset is sent.\",\"ilk\":\"The unique identifier of the ilk.\"}}},\"kind\":\"dev\",\"methods\":{\"arranger()\":{\"details\":\"Returns the arranger address.\",\"returns\":{\"arranger_\":\"The address of the arranger.\"}},\"cancelFundRequest(uint256)\":{\"details\":\"Function to cancel a withdrawal request from a Arranger.\",\"params\":{\"fundRequestId\":\"The ID of the withdrawal request.\"}},\"deposit(bytes32,address,uint256)\":{\"details\":\"Function for depositing tokens into a Fund Manager.\",\"params\":{\"amount\":\"The amount of tokens to deposit.\",\"asset\":\"The asset to deposit.\",\"ilk\":\"The unique identifier of the ilk.\"}},\"deposits(bytes32,address)\":{\"details\":\"Returns the aggregate deposits for a given ilk and asset.\",\"params\":{\"asset\":\"The address of the asset.\",\"ilk\":\"The unique identifier for a particular ilk.\"},\"returns\":{\"deposits_\":\"The deposits for the given ilk and asset.\"}},\"drawFunds(address,uint256)\":{\"details\":\"Only the Arranger is authorized to call this function.\",\"params\":{\"amount\":\"The amount of tokens to be drawn.\",\"asset\":\"The ERC20 token contract address from which funds are being drawn.\"}},\"drawableFunds(address)\":{\"details\":\"Function to get the amount of funds that can be drawn by the Arranger.\",\"params\":{\"asset\":\"The asset to check.\"},\"returns\":{\"drawableFunds_\":\"The amount of funds that can be drawn by the Arranger.\"}},\"file(bytes32,address)\":{\"details\":\"Function to set a value in the contract, called by the admin.\",\"params\":{\"data\":\"The value to be set.\",\"what\":\"The identifier for the value to be set.\"}},\"getFundRequest(uint256)\":{\"details\":\"Returns a FundRequest struct at a given fundRequestId.\",\"params\":{\"fundRequestId\":\"The id of the fund request.\"},\"returns\":{\"fundRequest\":\"  The FundRequest struct at the fundRequestId.\"}},\"getFundRequestsLength()\":{\"details\":\"Returns the length of the fundRequests array.\",\"returns\":{\"fundRequestsLength\":\"The length of the fundRequests array.\"}},\"isCancelable(uint256)\":{\"details\":\"Function to check if a withdrawal request can be cancelled.\",\"params\":{\"fundRequestId\":\"The ID of the withdrawal request.\"},\"returns\":{\"isCancelable_\":\" True if the withdrawal request can be cancelled, false otherwise.\"}},\"maxDeposit(bytes32,address)\":{\"details\":\"Function to get the maximum deposit possible for a specific asset and ilk.\",\"params\":{\"asset\":\"The asset to check.\",\"ilk\":\"The unique identifier of the ilk.\"},\"returns\":{\"maxDeposit_\":\"The maximum possible deposit for the asset.\"}},\"maxWithdraw(bytes32,address)\":{\"details\":\"Function to get the maximum withdrawal possible for a specific asset and ilk.\",\"params\":{\"asset\":\"The asset to check.\",\"ilk\":\"The unique identifier of the ilk.\"},\"returns\":{\"maxWithdraw_\":\"The maximum possible withdrawal for the asset.\"}},\"registry()\":{\"details\":\"Returns the AllocationRegistry address.\",\"returns\":{\"registry_\":\"The address of the registry contract.\"}},\"requestFunds(bytes32,address,uint256,string)\":{\"details\":\"Function to initiate a withdrawal request from a Arranger.\",\"params\":{\"amount\":\"The amount of tokens to withdraw.\",\"asset\":\"The asset to withdraw.\",\"ilk\":\"The unique identifier for a particular ilk.\",\"info\":\"Arbitrary string to provide additional info to the Arranger.\"},\"returns\":{\"fundRequestId\":\"The ID of the withdrawal request.\"}},\"requestedFunds(bytes32,address)\":{\"details\":\"Returns the aggregate requested funds for a given ilk and asset.\",\"params\":{\"asset\":\"The address of the asset.\",\"ilk\":\"The unique identifier for a particular ilk.\"},\"returns\":{\"requestedFunds_\":\"The requested funds for the given ilk and asset.\"}},\"returnFunds(uint256,uint256)\":{\"details\":\"Only the Arranger is authorized to call this function.\",\"params\":{\"amount\":\"The amount of tokens to be returned.\",\"fundRequestId\":\"The ID of the withdrawal request.\"}},\"roles()\":{\"details\":\"Returns the roles address.\",\"returns\":{\"roles_\":\"The address of the roles.\"}},\"totalDeposits(address)\":{\"details\":\"Returns the total deposits for a given asset.\",\"params\":{\"asset\":\"The address of the asset.\"},\"returns\":{\"totalDeposits_\":\"The total deposits held in the asset.\"}},\"totalRequestedFunds(address)\":{\"details\":\"Returns the total requested funds for a given asset.\",\"params\":{\"asset\":\"The address of the asset.\"},\"returns\":{\"totalRequestedFunds_\":\"The total requested funds held in the asset.\"}},\"totalWithdrawableFunds(address)\":{\"details\":\"Returns the total amount that can be withdrawn for a given asset.\",\"params\":{\"asset\":\"The address of the asset.\"},\"returns\":{\"totalWithdrawableFunds_\":\"The total amount that can be withdrawn from the asset.\"}},\"totalWithdrawals(address)\":{\"details\":\"Returns the total amount of cumulative withdrawals for a given asset.\",\"params\":{\"asset\":\"The address of the asset.\"},\"returns\":{\"totalWithdrawals_\":\"The total amount that can be withdrawn from the asset.\"}},\"withdraw(bytes32,address,uint256)\":{\"details\":\"Function for withdrawing tokens from a Fund Manager.\",\"params\":{\"asset\":\"The asset to withdraw.\",\"ilk\":\"The unique identifier of the ilk.\",\"maxAmount\":\"The max amount of tokens to withdraw. Setting to \\\"type(uint256).max\\\" will ensure to withdraw all available liquidity.\"},\"returns\":{\"amount\":\"     The amount of tokens withdrawn.\"}},\"withdrawableFunds(bytes32,address)\":{\"details\":\"Returns the aggregate withdrawable funds for a given ilk and asset.\",\"params\":{\"asset\":\"The address of the asset.\",\"ilk\":\"The unique identifier for a particular ilk.\"},\"returns\":{\"withdrawableFunds_\":\"The withdrawableFunds funds for the given ilk and asset.\"}},\"withdrawals(bytes32,address)\":{\"details\":\"Returns the aggregate cumulative withdraws for a given ilk and asset.\",\"params\":{\"asset\":\"The address of the asset.\",\"ilk\":\"The unique identifier for a particular ilk.\"},\"returns\":{\"withdrawals_\":\"The withdrawals funds for the given ilk and asset.\"}}},\"title\":\"IArrangerConduit\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"drawFunds(address,uint256)\":{\"notice\":\"Draw funds from the contract to the Arranger.\"},\"returnFunds(uint256,uint256)\":{\"notice\":\"Return funds (principal only) from the Arranger back to the contract.\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/interfaces/IArrangerConduit.sol\":\"IArrangerConduit\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":dss-allocator/=lib/dss-allocator/\",\":dss-interfaces/=lib/dss-test/lib/dss-interfaces/src/\",\":dss-test/=lib/dss-test/src/\",\":forge-std/=lib/forge-std/src/\",\":mock-erc20/=lib/mock-erc20/\",\":upgradeable-proxy/=lib/upgradeable-proxy/src/\"]},\"sources\":{\"lib/dss-allocator/src/interfaces/IAllocatorConduit.sol\":{\"keccak256\":\"0x0cae7155239f95952ccd98619b5cd007ddfef2a6113d1545dab5ef95099fee92\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://813e04c903eb1dfbf6338419290869498b1fb79fba3fe8d5a401453f21cb4df8\",\"dweb:/ipfs/QmfY9SP2wKeJmsW5diAhgyMiqfjwvUZEGPymFyB5ZCMj57\"]},\"src/interfaces/IArrangerConduit.sol\":{\"keccak256\":\"0xc345897b78141cd981cd1f59737e929d9e4f6ba96f4925ca7048d4e0af9cd27f\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://d2e2cde34d7f698c31aa5d22d53c970d6dcfa4d7ec7c91f09117808b480673d5\",\"dweb:/ipfs/QmSDwKJ4VcJYFGd2JT8bxqZrv1daduBuNnLJ16DgKfLhC8\"]}},\"version\":1}",
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"fundRequestId\",\"type\":\"uint256\"}],\"name\":\"CancelFundRequest\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"ilk\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"origin\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"Deposit\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"DrawFunds\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"what\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"data\",\"type\":\"address\"}],\"name\":\"File\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"ilk\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"fundRequestId\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"info\",\"type\":\"string\"}],\"name\":\"RequestFunds\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"ilk\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"fundRequestId\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amountRequested\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"returnAmount\",\"type\":\"uint256\"}],\"name\":\"ReturnFunds\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"ilk\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"destination\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"Withdraw\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"arranger\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"arranger_\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"fundRequestId\",\"type\":\"uint256\"}],\"name\":\"cancelFundRequest\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"ilk\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"deposit\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"ilk\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"deposits\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"deposits_\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"drawFunds\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"drawableFunds\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"drawableFunds_\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"what\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"data\",\"type\":\"address\"}],\"name\":\"file\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"fundRequestId\",\"type\":\"uint256\"}],\"name\":\"getFundRequest\",\"outputs\":[{\"components\":[{\"internalType\":\"enum IArrangerConduit.StatusEnum\",\"name\":\"status\",\"type\":\"uint8\"},{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"internalType\":\"bytes32\",\"name\":\"ilk\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"amountRequested\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountFilled\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"info\",\"type\":\"string\"}],\"internalType\":\"struct IArrangerConduit.FundRequest\",\"name\":\"fundRequest\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getFundRequestsLength\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"fundRequestsLength\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"fundRequestId\",\"type\":\"uint256\"}],\"name\":\"isCancelable\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"isCancelable_\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"ilk\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"maxDeposit\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"maxDeposit_\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"ilk\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"maxWithdraw\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"maxWithdraw_\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"registry\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"registry_\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"ilk\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"info\",\"type\":\"string\"}],\"name\":\"requestFunds\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"fundRequestId\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"ilk\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"requestedFunds\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"requestedFunds_\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"fundRequestId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"returnFunds\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"roles\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"roles_\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"totalDeposits\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"totalDeposits_\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"totalRequestedFunds\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"totalRequestedFunds_\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"totalWithdrawableFunds\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"totalWithdrawableFunds_\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"totalWithdrawals\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"totalWithdrawals_\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"ilk\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"maxAmount\",\"type\":\"uint256\"}],\"name\":\"withdraw\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"ilk\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"withdrawableFunds\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"withdrawableFunds_\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"ilk\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"withdrawals\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"withdrawals_\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Conduits are to be used to manage positions for multiple Allocators.         After funds are deposited into a Conduit, they can be deployed by Arrangers to earn         yield. When Allocators want funds back, they can request funds from the Arrangers and         then withdraw once liquidity is available.\",\"events\":{\"CancelFundRequest(uint256)\":{\"details\":\"Event emitted when a fund request is cancelled.\",\"params\":{\"fundRequestId\":\"The ID of the cancelled fund request.\"}},\"Deposit(bytes32,address,address,uint256)\":{\"details\":\"Event emitted when a deposit is made to the Conduit.\",\"params\":{\"amount\":\"The amount of asset deposited.\",\"asset\":\"The address of the asset deposited.\",\"ilk\":\"The unique identifier of the ilk.\",\"origin\":\"The address where the asset is coming from.\"}},\"DrawFunds(address,uint256)\":{\"details\":\"Event emitted when funds are drawn from the Conduit by the Arranger.\",\"params\":{\"amount\":\"The amount of asset to be withdrawn.\",\"asset\":\"The address of the asset to be withdrawn.\"}},\"File(bytes32,address)\":{\"details\":\"Event emitted when a value is changed by an admin.\",\"params\":{\"data\":\"The new value of the identifier.\",\"what\":\"The identifier of the value changed.\"}},\"RequestFunds(bytes32,address,uint256,uint256,string)\":{\"details\":\"Event emitted when a fund request is made.\",\"params\":{\"amount\":\"The amount of asset to be withdrawn.\",\"asset\":\"The address of the asset to be withdrawn.\",\"fundRequestId\":\"The ID of the fund request.\",\"ilk\":\"The unique identifier of the ilk.\",\"info\":\"Arbitrary string to provide additional info to the Arranger.\"}},\"ReturnFunds(bytes32,address,uint256,uint256,uint256)\":{\"details\":\"Event emitted when an Arranger returns funds to the Conduit to fill a fund request.\",\"params\":{\"amountRequested\":\"The amount of asset that was requested by the ilk to be withdrawn.\",\"asset\":\"The address of the asset to be withdrawn.\",\"fundRequestId\":\"The ID of the fund request.\",\"ilk\":\"The unique identifier of the ilk.\",\"returnAmount\":\"The resulting amount that was returned by the Arranger.\"}},\"Withdraw(bytes32,address,address,uint256)\":{\"details\":\"Event emitted when a withdrawal is made from the Conduit.\",\"params\":{\"amount\":\"The amount of asset withdrawn.\",\"asset\":\"The address of the asset withdrawn.\",\"destination\":\"The address where the asset is sent.\",\"ilk\":\"The unique identifier of the ilk.\"}}},\"kind\":\"dev\",\"methods\":{\"arranger()\":{\"details\":\"Returns the arranger address.\",\"returns\":{\"arranger_\":\"The address of the arranger.\"}},\"cancelFundRequest(uint256)\":{\"details\":\"Function to cancel a withdrawal request from a Arranger.\",\"params\":{\"fundRequestId\":\"The ID of the withdrawal request.\"}},\"deposit(bytes32,address,uint256)\":{\"details\":\"Function for depositing tokens into a Fund Manager.\",\"params\":{\"amount\":\"The amount of tokens to deposit.\",\"asset\":\"The asset to deposit.\",\"ilk\":\"The unique identifier of the ilk.\"}},\"deposits(bytes32,address)\":{\"details\":\"Returns the aggregate deposits for a given ilk and asset.\",\"params\":{\"asset\":\"The address of the asset.\",\"ilk\":\"The unique identifier for a particular ilk.\"},\"returns\":{\"deposits_\":\"The deposits for the given ilk and asset.\"}},\"drawFunds(address,uint256)\":{\"details\":\"Only the Arranger is authorized to call this function.\",\"params\":{\"amount\":\"The amount of tokens to be drawn.\",\"asset\":\"The ERC20 token contract address from which funds are being drawn.\"}},\"drawableFunds(address)\":{\"details\":\"Function to get the amount of funds that can be drawn by the Arranger.\",\"params\":{\"asset\":\"The asset to check.\"},\"returns\":{\"drawableFunds_\":\"The amount of funds that can be drawn by the Arranger.\"}},\"file(bytes32,address)\":{\"details\":\"Function to set a value in the contract, called by the admin.\",\"params\":{\"data\":\"The value to be set.\",\"what\":\"The identifier for the value to be set.\"}},\"getFundRequest(uint256)\":{\"details\":\"Returns a FundRequest struct at a given fundRequestId.\",\"params\":{\"fundRequestId\":\"The id of the fund request.\"},\"returns\":{\"fundRequest\":\"  The FundRequest struct at the fundRequestId.\"}},\"getFundRequestsLength()\":{\"details\":\"Returns the length of the fundRequests array.\",\"returns\":{\"fundRequestsLength\":\"The length of the fundRequests array.\"}},\"isCancelable(uint256)\":{\"details\":\"Function to check if a withdrawal request can be cancelled.\",\"params\":{\"fundRequestId\":\"The ID of the withdrawal request.\"},\"returns\":{\"isCancelable_\":\" True if the withdrawal request can be cancelled, false otherwise.\"}},\"maxDeposit(bytes32,address)\":{\"details\":\"Function to get the maximum deposit possible for a specific asset and ilk.\",\"params\":{\"asset\":\"The asset to check.\",\"ilk\":\"The unique identifier of the ilk.\"},\"returns\":{\"maxDeposit_\":\"The maximum possible deposit for the asset.\"}},\"maxWithdraw(bytes32,address)\":{\"details\":\"Function to get the maximum withdrawal possible for a specific asset and ilk.\",\"params\":{\"asset\":\"The asset to check.\",\"ilk\":\"The unique identifier of the ilk.\"},\"returns\":{\"maxWithdraw_\":\"The maximum possible withdrawal for the asset.\"}},\"registry()\":{\"details\":\"Returns the AllocationRegistry address.\",\"returns\":{\"registry_\":\"The address of the registry contract.\"}},\"requestFunds(bytes32,address,uint256,string)\":{\"details\":\"Function to initiate a withdrawal request from a Arranger.\",\"params\":{\"amount\":\"The amount of tokens to withdraw.\",\"asset\":\"The asset to withdraw.\",\"ilk\":\"The unique identifier for a particular ilk.\",\"info\":\"Arbitrary string to provide additional info to the Arranger.\"},\"returns\":{\"fundRequestId\":\"The ID of the withdrawal request.\"}},\"requestedFunds(bytes32,address)\":{\"details\":\"Returns the aggregate requested funds for a given ilk and asset.\",\"params\":{\"asset\":\"The address of the asset.\",\"ilk\":\"The unique identifier for a particular ilk.\"},\"returns\":{\"requestedFunds_\":\"The requested funds for the given ilk and asset.\"}},\"returnFunds(uint256,uint256)\":{\"details\":\"Only the Arranger is authorized to call this function.\",\"params\":{\"amount\":\"The amount of tokens to be returned.\",\"fundRequestId\":\"The ID of the withdrawal request.\"}},\"roles()\":{\"details\":\"Returns the roles address.\",\"returns\":{\"roles_\":\"The address of the roles.\"}},\"totalDeposits(address)\":{\"details\":\"Returns the total deposits for a given asset.\",\"params\":{\"asset\":\"The address of the asset.\"},\"returns\":{\"totalDeposits_\":\"The total deposits held in the asset.\"}},\"totalRequestedFunds(address)\":{\"details\":\"Returns the total requested funds for a given asset.\",\"params\":{\"asset\":\"The address of the asset.\"},\"returns\":{\"totalRequestedFunds_\":\"The total requested funds held in the asset.\"}},\"totalWithdrawableFunds(address)\":{\"details\":\"Returns the total amount that can be withdrawn for a given asset.\",\"params\":{\"asset\":\"The address of the asset.\"},\"returns\":{\"totalWithdrawableFunds_\":\"The total amount that can be withdrawn from the asset.\"}},\"totalWithdrawals(address)\":{\"details\":\"Returns the total amount of cumulative withdrawals for a given asset.\",\"params\":{\"asset\":\"The address of the asset.\"},\"returns\":{\"totalWithdrawals_\":\"The total amount that can be withdrawn from the asset.\"}},\"withdraw(bytes32,address,uint256)\":{\"details\":\"Function for withdrawing tokens from a Fund Manager.\",\"params\":{\"asset\":\"The asset to withdraw.\",\"ilk\":\"The unique identifier of the ilk.\",\"maxAmount\":\"The max amount of tokens to withdraw. Setting to \\\"type(uint256).max\\\" will ensure to withdraw all available liquidity.\"},\"returns\":{\"amount\":\"     The amount of tokens withdrawn.\"}},\"withdrawableFunds(bytes32,address)\":{\"details\":\"Returns the aggregate withdrawable funds for a given ilk and asset.\",\"params\":{\"asset\":\"The address of the asset.\",\"ilk\":\"The unique identifier for a particular ilk.\"},\"returns\":{\"withdrawableFunds_\":\"The withdrawableFunds funds for the given ilk and asset.\"}},\"withdrawals(bytes32,address)\":{\"details\":\"Returns the aggregate cumulative withdraws for a given ilk and asset.\",\"params\":{\"asset\":\"The address of the asset.\",\"ilk\":\"The unique identifier for a particular ilk.\"},\"returns\":{\"withdrawals_\":\"The withdrawals funds for the given ilk and asset.\"}}},\"title\":\"IArrangerConduit\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"drawFunds(address,uint256)\":{\"notice\":\"Draw funds from the contract to the Arranger.\"},\"returnFunds(uint256,uint256)\":{\"notice\":\"Return funds (principal only) from the Arranger back to the contract.\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/interfaces/IArrangerConduit.sol\":\"IArrangerConduit\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":dss-allocator/=lib/dss-allocator/\",\":dss-interfaces/=lib/dss-test/lib/dss-interfaces/src/\",\":dss-test/=lib/dss-test/src/\",\":forge-std/=lib/forge-std/src/\",\":mock-erc20/=lib/mock-erc20/\",\":upgradeable-proxy/=lib/upgradeable-proxy/src/\"]},\"sources\":{\"lib/dss-allocator/src/interfaces/IAllocatorConduit.sol\":{\"keccak256\":\"0x0cae7155239f95952ccd98619b5cd007ddfef2a6113d1545dab5ef95099fee92\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://813e04c903eb1dfbf6338419290869498b1fb79fba3fe8d5a401453f21cb4df8\",\"dweb:/ipfs/QmfY9SP2wKeJmsW5diAhgyMiqfjwvUZEGPymFyB5ZCMj57\"]},\"src/interfaces/IArrangerConduit.sol\":{\"keccak256\":\"0xc345897b78141cd981cd1f59737e929d9e4f6ba96f4925ca7048d4e0af9cd27f\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://d2e2cde34d7f698c31aa5d22d53c970d6dcfa4d7ec7c91f09117808b480673d5\",\"dweb:/ipfs/QmSDwKJ4VcJYFGd2JT8bxqZrv1daduBuNnLJ16DgKfLhC8\"]}},\"version\":1}",
   "metadata": {
     "compiler": {
-      "version": "0.8.20+commit.a1b79de6"
+      "version": "0.8.21+commit.d9974bed"
     },
     "language": "Solidity",
     "output": {
@@ -1669,13 +1669,13 @@
     },
     "settings": {
       "remappings": [
-        ":ds-test/=lib/forge-std/lib/ds-test/src/",
-        ":dss-allocator/=lib/dss-allocator/",
-        ":dss-interfaces/=lib/dss-test/lib/dss-interfaces/src/",
-        ":dss-test/=lib/dss-test/src/",
-        ":forge-std/=lib/forge-std/src/",
-        ":mock-erc20/=lib/mock-erc20/",
-        ":upgradeable-proxy/=lib/upgradeable-proxy/src/"
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "dss-allocator/=lib/dss-allocator/",
+        "dss-interfaces/=lib/dss-test/lib/dss-interfaces/src/",
+        "dss-test/=lib/dss-test/src/",
+        "forge-std/=lib/forge-std/src/",
+        "mock-erc20/=lib/mock-erc20/",
+        "upgradeable-proxy/=lib/upgradeable-proxy/src/"
       ],
       "optimizer": {
         "enabled": true,
@@ -1711,22 +1711,22 @@
   },
   "ast": {
     "absolutePath": "src/interfaces/IArrangerConduit.sol",
-    "id": 57106,
+    "id": 44516,
     "exportedSymbols": {
       "IAllocatorConduit": [
-        566
+        67
       ],
       "IArrangerConduit": [
-        57105
+        44515
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "46:12847:100",
+    "src": "46:12847:25",
     "nodes": [
       {
-        "id": 56868,
+        "id": 44278,
         "nodeType": "PragmaDirective",
-        "src": "46:24:100",
+        "src": "46:24:25",
         "nodes": [],
         "literals": [
           "solidity",
@@ -1736,24 +1736,24 @@
         ]
       },
       {
-        "id": 56870,
+        "id": 44280,
         "nodeType": "ImportDirective",
-        "src": "72:97:100",
+        "src": "72:97:25",
         "nodes": [],
         "absolutePath": "lib/dss-allocator/src/interfaces/IAllocatorConduit.sol",
         "file": "../../lib/dss-allocator/src/interfaces/IAllocatorConduit.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 57106,
-        "sourceUnit": 567,
+        "scope": 44516,
+        "sourceUnit": 68,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 56869,
+              "id": 44279,
               "name": "IAllocatorConduit",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 566,
-              "src": "81:17:100",
+              "referencedDeclaration": 67,
+              "src": "81:17:25",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -1762,39 +1762,39 @@
         "unitAlias": ""
       },
       {
-        "id": 57105,
+        "id": 44515,
         "nodeType": "ContractDefinition",
-        "src": "533:12359:100",
+        "src": "533:12359:25",
         "nodes": [
           {
-            "id": 56880,
+            "id": 44290,
             "nodeType": "EventDefinition",
-            "src": "1084:47:100",
+            "src": "1084:47:25",
             "nodes": [],
             "anonymous": false,
             "documentation": {
-              "id": 56874,
+              "id": 44284,
               "nodeType": "StructuredDocumentation",
-              "src": "892:187:100",
+              "src": "892:187:25",
               "text": "  @dev   Event emitted when a value is changed by an admin.\n  @param what The identifier of the value changed.\n  @param data The new value of the identifier."
             },
             "eventSelector": "8fef588b5fc1afbf5b2f06c1a435d513f208da2e6704c3d8f0e0ec91167066ba",
             "name": "File",
-            "nameLocation": "1090:4:100",
+            "nameLocation": "1090:4:25",
             "parameters": {
-              "id": 56879,
+              "id": 44289,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 56876,
+                  "id": 44286,
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "what",
-                  "nameLocation": "1111:4:100",
+                  "nameLocation": "1111:4:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 56880,
-                  "src": "1095:20:100",
+                  "scope": 44290,
+                  "src": "1095:20:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1802,10 +1802,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 56875,
+                    "id": 44285,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1095:7:100",
+                    "src": "1095:7:25",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -1815,14 +1815,14 @@
                 },
                 {
                   "constant": false,
-                  "id": 56878,
+                  "id": 44288,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "data",
-                  "nameLocation": "1125:4:100",
+                  "nameLocation": "1125:4:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 56880,
-                  "src": "1117:12:100",
+                  "scope": 44290,
+                  "src": "1117:12:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1830,10 +1830,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 56877,
+                    "id": 44287,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1117:7:100",
+                    "src": "1117:7:25",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1843,38 +1843,38 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1094:36:100"
+              "src": "1094:36:25"
             }
           },
           {
-            "id": 56885,
+            "id": 44295,
             "nodeType": "EventDefinition",
-            "src": "1587:47:100",
+            "src": "1587:47:25",
             "nodes": [],
             "anonymous": false,
             "documentation": {
-              "id": 56881,
+              "id": 44291,
               "nodeType": "StructuredDocumentation",
-              "src": "1441:141:100",
+              "src": "1441:141:25",
               "text": "  @dev   Event emitted when a fund request is cancelled.\n  @param fundRequestId The ID of the cancelled fund request."
             },
             "eventSelector": "8a53ee25106d5ac0078e6fbdd2beac3cb96458adcb31a00d35bf94428236d822",
             "name": "CancelFundRequest",
-            "nameLocation": "1593:17:100",
+            "nameLocation": "1593:17:25",
             "parameters": {
-              "id": 56884,
+              "id": 44294,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 56883,
+                  "id": 44293,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "fundRequestId",
-                  "nameLocation": "1619:13:100",
+                  "nameLocation": "1619:13:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 56885,
-                  "src": "1611:21:100",
+                  "scope": 44295,
+                  "src": "1611:21:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1882,10 +1882,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 56882,
+                    "id": 44292,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1611:7:100",
+                    "src": "1611:7:25",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1894,38 +1894,38 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1610:23:100"
+              "src": "1610:23:25"
             }
           },
           {
-            "id": 56892,
+            "id": 44302,
             "nodeType": "EventDefinition",
-            "src": "1877:55:100",
+            "src": "1877:55:25",
             "nodes": [],
             "anonymous": false,
             "documentation": {
-              "id": 56886,
+              "id": 44296,
               "nodeType": "StructuredDocumentation",
-              "src": "1640:232:100",
+              "src": "1640:232:25",
               "text": "  @dev   Event emitted when funds are drawn from the Conduit by the Arranger.\n  @param asset         The address of the asset to be withdrawn.\n  @param amount        The amount of asset to be withdrawn."
             },
             "eventSelector": "f085c28bde36fd9971e56c50dabd917d29c3dcbc3b42c49c6dae635e14ae63cb",
             "name": "DrawFunds",
-            "nameLocation": "1883:9:100",
+            "nameLocation": "1883:9:25",
             "parameters": {
-              "id": 56891,
+              "id": 44301,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 56888,
+                  "id": 44298,
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "asset",
-                  "nameLocation": "1909:5:100",
+                  "nameLocation": "1909:5:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 56892,
-                  "src": "1893:21:100",
+                  "scope": 44302,
+                  "src": "1893:21:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1933,10 +1933,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 56887,
+                    "id": 44297,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1893:7:100",
+                    "src": "1893:7:25",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1947,14 +1947,14 @@
                 },
                 {
                   "constant": false,
-                  "id": 56890,
+                  "id": 44300,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "amount",
-                  "nameLocation": "1924:6:100",
+                  "nameLocation": "1924:6:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 56892,
-                  "src": "1916:14:100",
+                  "scope": 44302,
+                  "src": "1916:14:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1962,10 +1962,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 56889,
+                    "id": 44299,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1916:7:100",
+                    "src": "1916:7:25",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1974,38 +1974,38 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1892:39:100"
+              "src": "1892:39:25"
             }
           },
           {
-            "id": 56905,
+            "id": 44315,
             "nodeType": "EventDefinition",
-            "src": "2359:162:100",
+            "src": "2359:162:25",
             "nodes": [],
             "anonymous": false,
             "documentation": {
-              "id": 56893,
+              "id": 44303,
               "nodeType": "StructuredDocumentation",
-              "src": "1938:416:100",
+              "src": "1938:416:25",
               "text": "  @dev   Event emitted when a fund request is made.\n  @param ilk           The unique identifier of the ilk.\n  @param asset         The address of the asset to be withdrawn.\n  @param fundRequestId The ID of the fund request.\n  @param amount        The amount of asset to be withdrawn.\n  @param info          Arbitrary string to provide additional info to the Arranger."
             },
             "eventSelector": "c37a21b1f83f8a603ed9e2fd12057edb7bfdaa66bea994899c868fc70f57e507",
             "name": "RequestFunds",
-            "nameLocation": "2365:12:100",
+            "nameLocation": "2365:12:25",
             "parameters": {
-              "id": 56904,
+              "id": 44314,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 56895,
+                  "id": 44305,
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "ilk",
-                  "nameLocation": "2403:3:100",
+                  "nameLocation": "2403:3:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 56905,
-                  "src": "2387:19:100",
+                  "scope": 44315,
+                  "src": "2387:19:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2013,10 +2013,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 56894,
+                    "id": 44304,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2387:7:100",
+                    "src": "2387:7:25",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -2026,14 +2026,14 @@
                 },
                 {
                   "constant": false,
-                  "id": 56897,
+                  "id": 44307,
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "asset",
-                  "nameLocation": "2432:5:100",
+                  "nameLocation": "2432:5:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 56905,
-                  "src": "2416:21:100",
+                  "scope": 44315,
+                  "src": "2416:21:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2041,10 +2041,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 56896,
+                    "id": 44306,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2416:7:100",
+                    "src": "2416:7:25",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -2055,14 +2055,14 @@
                 },
                 {
                   "constant": false,
-                  "id": 56899,
+                  "id": 44309,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "fundRequestId",
-                  "nameLocation": "2455:13:100",
+                  "nameLocation": "2455:13:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 56905,
-                  "src": "2447:21:100",
+                  "scope": 44315,
+                  "src": "2447:21:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2070,10 +2070,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 56898,
+                    "id": 44308,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2447:7:100",
+                    "src": "2447:7:25",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2083,14 +2083,14 @@
                 },
                 {
                   "constant": false,
-                  "id": 56901,
+                  "id": 44311,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "amount",
-                  "nameLocation": "2486:6:100",
+                  "nameLocation": "2486:6:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 56905,
-                  "src": "2478:14:100",
+                  "scope": 44315,
+                  "src": "2478:14:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2098,10 +2098,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 56900,
+                    "id": 44310,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2478:7:100",
+                    "src": "2478:7:25",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2111,14 +2111,14 @@
                 },
                 {
                   "constant": false,
-                  "id": 56903,
+                  "id": 44313,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "info",
-                  "nameLocation": "2510:4:100",
+                  "nameLocation": "2510:4:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 56905,
-                  "src": "2502:12:100",
+                  "scope": 44315,
+                  "src": "2502:12:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2126,10 +2126,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 56902,
+                    "id": 44312,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2502:6:100",
+                    "src": "2502:6:25",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -2138,38 +2138,38 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2377:143:100"
+              "src": "2377:143:25"
             }
           },
           {
-            "id": 56918,
+            "id": 44328,
             "nodeType": "EventDefinition",
-            "src": "3024:178:100",
+            "src": "3024:178:25",
             "nodes": [],
             "anonymous": false,
             "documentation": {
-              "id": 56906,
+              "id": 44316,
               "nodeType": "StructuredDocumentation",
-              "src": "2527:492:100",
+              "src": "2527:492:25",
               "text": "  @dev   Event emitted when an Arranger returns funds to the Conduit to fill a fund request.\n  @param ilk             The unique identifier of the ilk.\n  @param asset           The address of the asset to be withdrawn.\n  @param fundRequestId   The ID of the fund request.\n  @param amountRequested The amount of asset that was requested by the ilk to be withdrawn.\n  @param returnAmount    The resulting amount that was returned by the Arranger."
             },
             "eventSelector": "20e10bf859e24680d383a8a5a75dd133e8150398edfcaed7740a1c0e40575715",
             "name": "ReturnFunds",
-            "nameLocation": "3030:11:100",
+            "nameLocation": "3030:11:25",
             "parameters": {
-              "id": 56917,
+              "id": 44327,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 56908,
+                  "id": 44318,
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "ilk",
-                  "nameLocation": "3067:3:100",
+                  "nameLocation": "3067:3:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 56918,
-                  "src": "3051:19:100",
+                  "scope": 44328,
+                  "src": "3051:19:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2177,10 +2177,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 56907,
+                    "id": 44317,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "3051:7:100",
+                    "src": "3051:7:25",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -2190,14 +2190,14 @@
                 },
                 {
                   "constant": false,
-                  "id": 56910,
+                  "id": 44320,
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "asset",
-                  "nameLocation": "3096:5:100",
+                  "nameLocation": "3096:5:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 56918,
-                  "src": "3080:21:100",
+                  "scope": 44328,
+                  "src": "3080:21:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2205,10 +2205,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 56909,
+                    "id": 44319,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "3080:7:100",
+                    "src": "3080:7:25",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -2219,14 +2219,14 @@
                 },
                 {
                   "constant": false,
-                  "id": 56912,
+                  "id": 44322,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "fundRequestId",
-                  "nameLocation": "3119:13:100",
+                  "nameLocation": "3119:13:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 56918,
-                  "src": "3111:21:100",
+                  "scope": 44328,
+                  "src": "3111:21:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2234,10 +2234,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 56911,
+                    "id": 44321,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "3111:7:100",
+                    "src": "3111:7:25",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2247,14 +2247,14 @@
                 },
                 {
                   "constant": false,
-                  "id": 56914,
+                  "id": 44324,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "amountRequested",
-                  "nameLocation": "3150:15:100",
+                  "nameLocation": "3150:15:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 56918,
-                  "src": "3142:23:100",
+                  "scope": 44328,
+                  "src": "3142:23:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2262,10 +2262,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 56913,
+                    "id": 44323,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "3142:7:100",
+                    "src": "3142:7:25",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2275,14 +2275,14 @@
                 },
                 {
                   "constant": false,
-                  "id": 56916,
+                  "id": 44326,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "returnAmount",
-                  "nameLocation": "3183:12:100",
+                  "nameLocation": "3183:12:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 56918,
-                  "src": "3175:20:100",
+                  "scope": 44328,
+                  "src": "3175:20:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2290,10 +2290,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 56915,
+                    "id": 44325,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "3175:7:100",
+                    "src": "3175:7:25",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2302,54 +2302,54 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "3041:160:100"
+              "src": "3041:160:25"
             }
           },
           {
-            "id": 56933,
+            "id": 44343,
             "nodeType": "StructDefinition",
-            "src": "4055:197:100",
+            "src": "4055:197:25",
             "nodes": [],
             "canonicalName": "IArrangerConduit.FundRequest",
             "documentation": {
-              "id": 56919,
+              "id": 44329,
               "nodeType": "StructuredDocumentation",
-              "src": "3512:538:100",
+              "src": "3512:538:25",
               "text": "  @dev   Struct representing a fund request.\n  @param status          The current status of the fund request.\n  @param asset           The address of the asset requested in the fund request.\n  @param ilk             The unique identifier of the ilk.\n  @param amountRequested The amount of asset requested in the fund request.\n  @param amountFilled    The amount of asset filled in the fund request.\n  @param info            Arbitrary string to provide additional info to the Arranger."
             },
             "members": [
               {
                 "constant": false,
-                "id": 56922,
+                "id": 44332,
                 "mutability": "mutable",
                 "name": "status",
-                "nameLocation": "4095:6:100",
+                "nameLocation": "4095:6:25",
                 "nodeType": "VariableDeclaration",
-                "scope": 56933,
-                "src": "4084:17:100",
+                "scope": 44343,
+                "src": "4084:17:25",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_enum$_StatusEnum_$56939",
+                  "typeIdentifier": "t_enum$_StatusEnum_$44349",
                   "typeString": "enum IArrangerConduit.StatusEnum"
                 },
                 "typeName": {
-                  "id": 56921,
+                  "id": 44331,
                   "nodeType": "UserDefinedTypeName",
                   "pathNode": {
-                    "id": 56920,
+                    "id": 44330,
                     "name": "StatusEnum",
                     "nameLocations": [
-                      "4084:10:100"
+                      "4084:10:25"
                     ],
                     "nodeType": "IdentifierPath",
-                    "referencedDeclaration": 56939,
-                    "src": "4084:10:100"
+                    "referencedDeclaration": 44349,
+                    "src": "4084:10:25"
                   },
-                  "referencedDeclaration": 56939,
-                  "src": "4084:10:100",
+                  "referencedDeclaration": 44349,
+                  "src": "4084:10:25",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_enum$_StatusEnum_$56939",
+                    "typeIdentifier": "t_enum$_StatusEnum_$44349",
                     "typeString": "enum IArrangerConduit.StatusEnum"
                   }
                 },
@@ -2357,13 +2357,13 @@
               },
               {
                 "constant": false,
-                "id": 56924,
+                "id": 44334,
                 "mutability": "mutable",
                 "name": "asset",
-                "nameLocation": "4122:5:100",
+                "nameLocation": "4122:5:25",
                 "nodeType": "VariableDeclaration",
-                "scope": 56933,
-                "src": "4111:16:100",
+                "scope": 44343,
+                "src": "4111:16:25",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -2371,10 +2371,10 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 56923,
+                  "id": 44333,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
-                  "src": "4111:7:100",
+                  "src": "4111:7:25",
                   "stateMutability": "nonpayable",
                   "typeDescriptions": {
                     "typeIdentifier": "t_address",
@@ -2385,13 +2385,13 @@
               },
               {
                 "constant": false,
-                "id": 56926,
+                "id": 44336,
                 "mutability": "mutable",
                 "name": "ilk",
-                "nameLocation": "4148:3:100",
+                "nameLocation": "4148:3:25",
                 "nodeType": "VariableDeclaration",
-                "scope": 56933,
-                "src": "4137:14:100",
+                "scope": 44343,
+                "src": "4137:14:25",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -2399,10 +2399,10 @@
                   "typeString": "bytes32"
                 },
                 "typeName": {
-                  "id": 56925,
+                  "id": 44335,
                   "name": "bytes32",
                   "nodeType": "ElementaryTypeName",
-                  "src": "4137:7:100",
+                  "src": "4137:7:25",
                   "typeDescriptions": {
                     "typeIdentifier": "t_bytes32",
                     "typeString": "bytes32"
@@ -2412,13 +2412,13 @@
               },
               {
                 "constant": false,
-                "id": 56928,
+                "id": 44338,
                 "mutability": "mutable",
                 "name": "amountRequested",
-                "nameLocation": "4172:15:100",
+                "nameLocation": "4172:15:25",
                 "nodeType": "VariableDeclaration",
-                "scope": 56933,
-                "src": "4161:26:100",
+                "scope": 44343,
+                "src": "4161:26:25",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -2426,10 +2426,10 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 56927,
+                  "id": 44337,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
-                  "src": "4161:7:100",
+                  "src": "4161:7:25",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -2439,13 +2439,13 @@
               },
               {
                 "constant": false,
-                "id": 56930,
+                "id": 44340,
                 "mutability": "mutable",
                 "name": "amountFilled",
-                "nameLocation": "4208:12:100",
+                "nameLocation": "4208:12:25",
                 "nodeType": "VariableDeclaration",
-                "scope": 56933,
-                "src": "4197:23:100",
+                "scope": 44343,
+                "src": "4197:23:25",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -2453,10 +2453,10 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 56929,
+                  "id": 44339,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
-                  "src": "4197:7:100",
+                  "src": "4197:7:25",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -2466,13 +2466,13 @@
               },
               {
                 "constant": false,
-                "id": 56932,
+                "id": 44342,
                 "mutability": "mutable",
                 "name": "info",
-                "nameLocation": "4241:4:100",
+                "nameLocation": "4241:4:25",
                 "nodeType": "VariableDeclaration",
-                "scope": 56933,
-                "src": "4230:15:100",
+                "scope": 44343,
+                "src": "4230:15:25",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -2480,10 +2480,10 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 56931,
+                  "id": 44341,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
-                  "src": "4230:6:100",
+                  "src": "4230:6:25",
                   "typeDescriptions": {
                     "typeIdentifier": "t_string_storage_ptr",
                     "typeString": "string"
@@ -2493,64 +2493,64 @@
               }
             ],
             "name": "FundRequest",
-            "nameLocation": "4062:11:100",
-            "scope": 57105,
+            "nameLocation": "4062:11:25",
+            "scope": 44515,
             "visibility": "public"
           },
           {
-            "id": 56939,
+            "id": 44349,
             "nodeType": "EnumDefinition",
-            "src": "4660:100:100",
+            "src": "4660:100:25",
             "nodes": [],
             "canonicalName": "IArrangerConduit.StatusEnum",
             "documentation": {
-              "id": 56934,
+              "id": 44344,
               "nodeType": "StructuredDocumentation",
-              "src": "4258:397:100",
+              "src": "4258:397:25",
               "text": "  @dev    Enum representing the status of a fund request.\n  @notice PENDING   - Null state before the fund request has been made.\n  @notice PENDING   - The fund request has been made, but not yet processed.\n  @notice CANCELLED - The fund request has been cancelled by the ilk.\n  @notice COMPLETED - The fund request has been fully processed and completed."
             },
             "members": [
               {
-                "id": 56935,
+                "id": 44345,
                 "name": "UNINITIALIZED",
-                "nameLocation": "4686:13:100",
+                "nameLocation": "4686:13:25",
                 "nodeType": "EnumValue",
-                "src": "4686:13:100"
+                "src": "4686:13:25"
               },
               {
-                "id": 56936,
+                "id": 44346,
                 "name": "PENDING",
-                "nameLocation": "4709:7:100",
+                "nameLocation": "4709:7:25",
                 "nodeType": "EnumValue",
-                "src": "4709:7:100"
+                "src": "4709:7:25"
               },
               {
-                "id": 56937,
+                "id": 44347,
                 "name": "CANCELLED",
-                "nameLocation": "4726:9:100",
+                "nameLocation": "4726:9:25",
                 "nodeType": "EnumValue",
-                "src": "4726:9:100"
+                "src": "4726:9:25"
               },
               {
-                "id": 56938,
+                "id": 44348,
                 "name": "COMPLETED",
-                "nameLocation": "4745:9:100",
+                "nameLocation": "4745:9:25",
                 "nodeType": "EnumValue",
-                "src": "4745:9:100"
+                "src": "4745:9:25"
               }
             ],
             "name": "StatusEnum",
-            "nameLocation": "4665:10:100"
+            "nameLocation": "4665:10:25"
           },
           {
-            "id": 56945,
+            "id": 44355,
             "nodeType": "FunctionDefinition",
-            "src": "5187:62:100",
+            "src": "5187:62:25",
             "nodes": [],
             "documentation": {
-              "id": 56940,
+              "id": 44350,
               "nodeType": "StructuredDocumentation",
-              "src": "5070:112:100",
+              "src": "5070:112:25",
               "text": "  @dev    Returns the arranger address.\n  @return arranger_ The address of the arranger."
             },
             "functionSelector": "46ec3b7b",
@@ -2558,26 +2558,26 @@
             "kind": "function",
             "modifiers": [],
             "name": "arranger",
-            "nameLocation": "5196:8:100",
+            "nameLocation": "5196:8:25",
             "parameters": {
-              "id": 56941,
+              "id": 44351,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "5204:2:100"
+              "src": "5204:2:25"
             },
             "returnParameters": {
-              "id": 56944,
+              "id": 44354,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 56943,
+                  "id": 44353,
                   "mutability": "mutable",
                   "name": "arranger_",
-                  "nameLocation": "5238:9:100",
+                  "nameLocation": "5238:9:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 56945,
-                  "src": "5230:17:100",
+                  "scope": 44355,
+                  "src": "5230:17:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2585,10 +2585,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 56942,
+                    "id": 44352,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "5230:7:100",
+                    "src": "5230:7:25",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -2598,22 +2598,22 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "5229:19:100"
+              "src": "5229:19:25"
             },
-            "scope": 57105,
+            "scope": 44515,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
-            "id": 56951,
+            "id": 44361,
             "nodeType": "FunctionDefinition",
-            "src": "5391:62:100",
+            "src": "5391:62:25",
             "nodes": [],
             "documentation": {
-              "id": 56946,
+              "id": 44356,
               "nodeType": "StructuredDocumentation",
-              "src": "5255:131:100",
+              "src": "5255:131:25",
               "text": "  @dev    Returns the AllocationRegistry address.\n  @return registry_ The address of the registry contract."
             },
             "functionSelector": "7b103999",
@@ -2621,26 +2621,26 @@
             "kind": "function",
             "modifiers": [],
             "name": "registry",
-            "nameLocation": "5400:8:100",
+            "nameLocation": "5400:8:25",
             "parameters": {
-              "id": 56947,
+              "id": 44357,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "5408:2:100"
+              "src": "5408:2:25"
             },
             "returnParameters": {
-              "id": 56950,
+              "id": 44360,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 56949,
+                  "id": 44359,
                   "mutability": "mutable",
                   "name": "registry_",
-                  "nameLocation": "5442:9:100",
+                  "nameLocation": "5442:9:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 56951,
-                  "src": "5434:17:100",
+                  "scope": 44361,
+                  "src": "5434:17:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2648,10 +2648,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 56948,
+                    "id": 44358,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "5434:7:100",
+                    "src": "5434:7:25",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -2661,22 +2661,22 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "5433:19:100"
+              "src": "5433:19:25"
             },
-            "scope": 57105,
+            "scope": 44515,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
-            "id": 56957,
+            "id": 44367,
             "nodeType": "FunctionDefinition",
-            "src": "5567:56:100",
+            "src": "5567:56:25",
             "nodes": [],
             "documentation": {
-              "id": 56952,
+              "id": 44362,
               "nodeType": "StructuredDocumentation",
-              "src": "5459:103:100",
+              "src": "5459:103:25",
               "text": "  @dev    Returns the roles address.\n  @return roles_ The address of the roles."
             },
             "functionSelector": "392f5f64",
@@ -2684,26 +2684,26 @@
             "kind": "function",
             "modifiers": [],
             "name": "roles",
-            "nameLocation": "5576:5:100",
+            "nameLocation": "5576:5:25",
             "parameters": {
-              "id": 56953,
+              "id": 44363,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "5581:2:100"
+              "src": "5581:2:25"
             },
             "returnParameters": {
-              "id": 56956,
+              "id": 44366,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 56955,
+                  "id": 44365,
                   "mutability": "mutable",
                   "name": "roles_",
-                  "nameLocation": "5615:6:100",
+                  "nameLocation": "5615:6:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 56957,
-                  "src": "5607:14:100",
+                  "scope": 44367,
+                  "src": "5607:14:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2711,10 +2711,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 56954,
+                    "id": 44364,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "5607:7:100",
+                    "src": "5607:7:25",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -2724,22 +2724,22 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "5606:16:100"
+              "src": "5606:16:25"
             },
-            "scope": 57105,
+            "scope": 44515,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
-            "id": 56965,
+            "id": 44375,
             "nodeType": "FunctionDefinition",
-            "src": "5833:85:100",
+            "src": "5833:85:25",
             "nodes": [],
             "documentation": {
-              "id": 56958,
+              "id": 44368,
               "nodeType": "StructuredDocumentation",
-              "src": "5629:199:100",
+              "src": "5629:199:25",
               "text": "  @dev    Returns the total deposits for a given asset.\n  @param  asset          The address of the asset.\n  @return totalDeposits_ The total deposits held in the asset."
             },
             "functionSelector": "e9403256",
@@ -2747,20 +2747,20 @@
             "kind": "function",
             "modifiers": [],
             "name": "totalDeposits",
-            "nameLocation": "5842:13:100",
+            "nameLocation": "5842:13:25",
             "parameters": {
-              "id": 56961,
+              "id": 44371,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 56960,
+                  "id": 44370,
                   "mutability": "mutable",
                   "name": "asset",
-                  "nameLocation": "5864:5:100",
+                  "nameLocation": "5864:5:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 56965,
-                  "src": "5856:13:100",
+                  "scope": 44375,
+                  "src": "5856:13:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2768,10 +2768,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 56959,
+                    "id": 44369,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "5856:7:100",
+                    "src": "5856:7:25",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -2781,21 +2781,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "5855:15:100"
+              "src": "5855:15:25"
             },
             "returnParameters": {
-              "id": 56964,
+              "id": 44374,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 56963,
+                  "id": 44373,
                   "mutability": "mutable",
                   "name": "totalDeposits_",
-                  "nameLocation": "5902:14:100",
+                  "nameLocation": "5902:14:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 56965,
-                  "src": "5894:22:100",
+                  "scope": 44375,
+                  "src": "5894:22:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2803,10 +2803,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 56962,
+                    "id": 44372,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "5894:7:100",
+                    "src": "5894:7:25",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2815,22 +2815,22 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "5893:24:100"
+              "src": "5893:24:25"
             },
-            "scope": 57105,
+            "scope": 44515,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
-            "id": 56973,
+            "id": 44383,
             "nodeType": "FunctionDefinition",
-            "src": "6148:105:100",
+            "src": "6148:105:25",
             "nodes": [],
             "documentation": {
-              "id": 56966,
+              "id": 44376,
               "nodeType": "StructuredDocumentation",
-              "src": "5924:219:100",
+              "src": "5924:219:25",
               "text": "  @dev    Returns the total requested funds for a given asset.\n  @param  asset          The address of the asset.\n  @return totalRequestedFunds_ The total requested funds held in the asset."
             },
             "functionSelector": "633b626d",
@@ -2838,20 +2838,20 @@
             "kind": "function",
             "modifiers": [],
             "name": "totalRequestedFunds",
-            "nameLocation": "6157:19:100",
+            "nameLocation": "6157:19:25",
             "parameters": {
-              "id": 56969,
+              "id": 44379,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 56968,
+                  "id": 44378,
                   "mutability": "mutable",
                   "name": "asset",
-                  "nameLocation": "6185:5:100",
+                  "nameLocation": "6185:5:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 56973,
-                  "src": "6177:13:100",
+                  "scope": 44383,
+                  "src": "6177:13:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2859,10 +2859,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 56967,
+                    "id": 44377,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "6177:7:100",
+                    "src": "6177:7:25",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -2872,21 +2872,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "6176:15:100"
+              "src": "6176:15:25"
             },
             "returnParameters": {
-              "id": 56972,
+              "id": 44382,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 56971,
+                  "id": 44381,
                   "mutability": "mutable",
                   "name": "totalRequestedFunds_",
-                  "nameLocation": "6231:20:100",
+                  "nameLocation": "6231:20:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 56973,
-                  "src": "6223:28:100",
+                  "scope": 44383,
+                  "src": "6223:28:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2894,10 +2894,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 56970,
+                    "id": 44380,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "6223:7:100",
+                    "src": "6223:7:25",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2906,22 +2906,22 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "6222:30:100"
+              "src": "6222:30:25"
             },
-            "scope": 57105,
+            "scope": 44515,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
-            "id": 56981,
+            "id": 44391,
             "nodeType": "FunctionDefinition",
-            "src": "6513:111:100",
+            "src": "6513:111:25",
             "nodes": [],
             "documentation": {
-              "id": 56974,
+              "id": 44384,
               "nodeType": "StructuredDocumentation",
-              "src": "6259:249:100",
+              "src": "6259:249:25",
               "text": "  @dev    Returns the total amount that can be withdrawn for a given asset.\n  @param  asset              The address of the asset.\n  @return totalWithdrawableFunds_ The total amount that can be withdrawn from the asset."
             },
             "functionSelector": "4a765335",
@@ -2929,20 +2929,20 @@
             "kind": "function",
             "modifiers": [],
             "name": "totalWithdrawableFunds",
-            "nameLocation": "6522:22:100",
+            "nameLocation": "6522:22:25",
             "parameters": {
-              "id": 56977,
+              "id": 44387,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 56976,
+                  "id": 44386,
                   "mutability": "mutable",
                   "name": "asset",
-                  "nameLocation": "6553:5:100",
+                  "nameLocation": "6553:5:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 56981,
-                  "src": "6545:13:100",
+                  "scope": 44391,
+                  "src": "6545:13:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2950,10 +2950,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 56975,
+                    "id": 44385,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "6545:7:100",
+                    "src": "6545:7:25",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -2963,21 +2963,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "6544:15:100"
+              "src": "6544:15:25"
             },
             "returnParameters": {
-              "id": 56980,
+              "id": 44390,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 56979,
+                  "id": 44389,
                   "mutability": "mutable",
                   "name": "totalWithdrawableFunds_",
-                  "nameLocation": "6599:23:100",
+                  "nameLocation": "6599:23:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 56981,
-                  "src": "6591:31:100",
+                  "scope": 44391,
+                  "src": "6591:31:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2985,10 +2985,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 56978,
+                    "id": 44388,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "6591:7:100",
+                    "src": "6591:7:25",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2997,22 +2997,22 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "6590:33:100"
+              "src": "6590:33:25"
             },
-            "scope": 57105,
+            "scope": 44515,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
-            "id": 56989,
+            "id": 44399,
             "nodeType": "FunctionDefinition",
-            "src": "6881:99:100",
+            "src": "6881:99:25",
             "nodes": [],
             "documentation": {
-              "id": 56982,
+              "id": 44392,
               "nodeType": "StructuredDocumentation",
-              "src": "6630:246:100",
+              "src": "6630:246:25",
               "text": "  @dev    Returns the total amount of cumulative withdrawals for a given asset.\n  @param  asset             The address of the asset.\n  @return totalWithdrawals_ The total amount that can be withdrawn from the asset."
             },
             "functionSelector": "69f7caba",
@@ -3020,20 +3020,20 @@
             "kind": "function",
             "modifiers": [],
             "name": "totalWithdrawals",
-            "nameLocation": "6890:16:100",
+            "nameLocation": "6890:16:25",
             "parameters": {
-              "id": 56985,
+              "id": 44395,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 56984,
+                  "id": 44394,
                   "mutability": "mutable",
                   "name": "asset",
-                  "nameLocation": "6915:5:100",
+                  "nameLocation": "6915:5:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 56989,
-                  "src": "6907:13:100",
+                  "scope": 44399,
+                  "src": "6907:13:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3041,10 +3041,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 56983,
+                    "id": 44393,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "6907:7:100",
+                    "src": "6907:7:25",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -3054,21 +3054,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "6906:15:100"
+              "src": "6906:15:25"
             },
             "returnParameters": {
-              "id": 56988,
+              "id": 44398,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 56987,
+                  "id": 44397,
                   "mutability": "mutable",
                   "name": "totalWithdrawals_",
-                  "nameLocation": "6961:17:100",
+                  "nameLocation": "6961:17:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 56989,
-                  "src": "6953:25:100",
+                  "scope": 44399,
+                  "src": "6953:25:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3076,10 +3076,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 56986,
+                    "id": 44396,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "6953:7:100",
+                    "src": "6953:7:25",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -3088,22 +3088,22 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "6952:27:100"
+              "src": "6952:27:25"
             },
-            "scope": 57105,
+            "scope": 44515,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
-            "id": 56999,
+            "id": 44409,
             "nodeType": "FunctionDefinition",
-            "src": "7268:88:100",
+            "src": "7268:88:25",
             "nodes": [],
             "documentation": {
-              "id": 56990,
+              "id": 44400,
               "nodeType": "StructuredDocumentation",
-              "src": "6986:277:100",
+              "src": "6986:277:25",
               "text": "  @dev    Returns the aggregate deposits for a given ilk and asset.\n  @param  ilk        The unique identifier for a particular ilk.\n  @param  asset      The address of the asset.\n  @return deposits_ The deposits for the given ilk and asset."
             },
             "functionSelector": "4f1c2c31",
@@ -3111,20 +3111,20 @@
             "kind": "function",
             "modifiers": [],
             "name": "deposits",
-            "nameLocation": "7277:8:100",
+            "nameLocation": "7277:8:25",
             "parameters": {
-              "id": 56995,
+              "id": 44405,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 56992,
+                  "id": 44402,
                   "mutability": "mutable",
                   "name": "ilk",
-                  "nameLocation": "7294:3:100",
+                  "nameLocation": "7294:3:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 56999,
-                  "src": "7286:11:100",
+                  "scope": 44409,
+                  "src": "7286:11:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3132,10 +3132,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 56991,
+                    "id": 44401,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "7286:7:100",
+                    "src": "7286:7:25",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -3145,13 +3145,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 56994,
+                  "id": 44404,
                   "mutability": "mutable",
                   "name": "asset",
-                  "nameLocation": "7307:5:100",
+                  "nameLocation": "7307:5:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 56999,
-                  "src": "7299:13:100",
+                  "scope": 44409,
+                  "src": "7299:13:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3159,10 +3159,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 56993,
+                    "id": 44403,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "7299:7:100",
+                    "src": "7299:7:25",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -3172,21 +3172,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "7285:28:100"
+              "src": "7285:28:25"
             },
             "returnParameters": {
-              "id": 56998,
+              "id": 44408,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 56997,
+                  "id": 44407,
                   "mutability": "mutable",
                   "name": "deposits_",
-                  "nameLocation": "7345:9:100",
+                  "nameLocation": "7345:9:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 56999,
-                  "src": "7337:17:100",
+                  "scope": 44409,
+                  "src": "7337:17:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3194,10 +3194,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 56996,
+                    "id": 44406,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "7337:7:100",
+                    "src": "7337:7:25",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -3206,22 +3206,22 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "7336:19:100"
+              "src": "7336:19:25"
             },
-            "scope": 57105,
+            "scope": 44515,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
-            "id": 57009,
+            "id": 44419,
             "nodeType": "FunctionDefinition",
-            "src": "7674:108:100",
+            "src": "7674:108:25",
             "nodes": [],
             "documentation": {
-              "id": 57000,
+              "id": 44410,
               "nodeType": "StructuredDocumentation",
-              "src": "7362:307:100",
+              "src": "7362:307:25",
               "text": "  @dev    Returns the aggregate requested funds for a given ilk and asset.\n  @param  ilk             The unique identifier for a particular ilk.\n  @param  asset           The address of the asset.\n  @return requestedFunds_ The requested funds for the given ilk and asset."
             },
             "functionSelector": "dcb37d8f",
@@ -3229,20 +3229,20 @@
             "kind": "function",
             "modifiers": [],
             "name": "requestedFunds",
-            "nameLocation": "7683:14:100",
+            "nameLocation": "7683:14:25",
             "parameters": {
-              "id": 57005,
+              "id": 44415,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 57002,
+                  "id": 44412,
                   "mutability": "mutable",
                   "name": "ilk",
-                  "nameLocation": "7706:3:100",
+                  "nameLocation": "7706:3:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 57009,
-                  "src": "7698:11:100",
+                  "scope": 44419,
+                  "src": "7698:11:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3250,10 +3250,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 57001,
+                    "id": 44411,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "7698:7:100",
+                    "src": "7698:7:25",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -3263,13 +3263,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 57004,
+                  "id": 44414,
                   "mutability": "mutable",
                   "name": "asset",
-                  "nameLocation": "7719:5:100",
+                  "nameLocation": "7719:5:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 57009,
-                  "src": "7711:13:100",
+                  "scope": 44419,
+                  "src": "7711:13:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3277,10 +3277,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 57003,
+                    "id": 44413,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "7711:7:100",
+                    "src": "7711:7:25",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -3290,21 +3290,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "7697:28:100"
+              "src": "7697:28:25"
             },
             "returnParameters": {
-              "id": 57008,
+              "id": 44418,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 57007,
+                  "id": 44417,
                   "mutability": "mutable",
                   "name": "requestedFunds_",
-                  "nameLocation": "7765:15:100",
+                  "nameLocation": "7765:15:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 57009,
-                  "src": "7757:23:100",
+                  "scope": 44419,
+                  "src": "7757:23:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3312,10 +3312,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 57006,
+                    "id": 44416,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "7757:7:100",
+                    "src": "7757:7:25",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -3324,22 +3324,22 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "7756:25:100"
+              "src": "7756:25:25"
             },
-            "scope": 57105,
+            "scope": 44515,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
-            "id": 57019,
+            "id": 44429,
             "nodeType": "FunctionDefinition",
-            "src": "8110:114:100",
+            "src": "8110:114:25",
             "nodes": [],
             "documentation": {
-              "id": 57010,
+              "id": 44420,
               "nodeType": "StructuredDocumentation",
-              "src": "7788:317:100",
+              "src": "7788:317:25",
               "text": "  @dev    Returns the aggregate withdrawable funds for a given ilk and asset.\n  @param  ilk           The unique identifier for a particular ilk.\n  @param  asset         The address of the asset.\n  @return withdrawableFunds_ The withdrawableFunds funds for the given ilk and asset."
             },
             "functionSelector": "d31d2fad",
@@ -3347,20 +3347,20 @@
             "kind": "function",
             "modifiers": [],
             "name": "withdrawableFunds",
-            "nameLocation": "8119:17:100",
+            "nameLocation": "8119:17:25",
             "parameters": {
-              "id": 57015,
+              "id": 44425,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 57012,
+                  "id": 44422,
                   "mutability": "mutable",
                   "name": "ilk",
-                  "nameLocation": "8145:3:100",
+                  "nameLocation": "8145:3:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 57019,
-                  "src": "8137:11:100",
+                  "scope": 44429,
+                  "src": "8137:11:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3368,10 +3368,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 57011,
+                    "id": 44421,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "8137:7:100",
+                    "src": "8137:7:25",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -3381,13 +3381,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 57014,
+                  "id": 44424,
                   "mutability": "mutable",
                   "name": "asset",
-                  "nameLocation": "8158:5:100",
+                  "nameLocation": "8158:5:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 57019,
-                  "src": "8150:13:100",
+                  "scope": 44429,
+                  "src": "8150:13:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3395,10 +3395,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 57013,
+                    "id": 44423,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "8150:7:100",
+                    "src": "8150:7:25",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -3408,21 +3408,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "8136:28:100"
+              "src": "8136:28:25"
             },
             "returnParameters": {
-              "id": 57018,
+              "id": 44428,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 57017,
+                  "id": 44427,
                   "mutability": "mutable",
                   "name": "withdrawableFunds_",
-                  "nameLocation": "8204:18:100",
+                  "nameLocation": "8204:18:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 57019,
-                  "src": "8196:26:100",
+                  "scope": 44429,
+                  "src": "8196:26:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3430,10 +3430,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 57016,
+                    "id": 44426,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "8196:7:100",
+                    "src": "8196:7:25",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -3442,22 +3442,22 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "8195:28:100"
+              "src": "8195:28:25"
             },
-            "scope": 57105,
+            "scope": 44515,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
-            "id": 57029,
+            "id": 44439,
             "nodeType": "FunctionDefinition",
-            "src": "8540:94:100",
+            "src": "8540:94:25",
             "nodes": [],
             "documentation": {
-              "id": 57020,
+              "id": 44430,
               "nodeType": "StructuredDocumentation",
-              "src": "8230:305:100",
+              "src": "8230:305:25",
               "text": "  @dev    Returns the aggregate cumulative withdraws for a given ilk and asset.\n  @param  ilk          The unique identifier for a particular ilk.\n  @param  asset        The address of the asset.\n  @return withdrawals_ The withdrawals funds for the given ilk and asset."
             },
             "functionSelector": "74d47dc5",
@@ -3465,20 +3465,20 @@
             "kind": "function",
             "modifiers": [],
             "name": "withdrawals",
-            "nameLocation": "8549:11:100",
+            "nameLocation": "8549:11:25",
             "parameters": {
-              "id": 57025,
+              "id": 44435,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 57022,
+                  "id": 44432,
                   "mutability": "mutable",
                   "name": "ilk",
-                  "nameLocation": "8569:3:100",
+                  "nameLocation": "8569:3:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 57029,
-                  "src": "8561:11:100",
+                  "scope": 44439,
+                  "src": "8561:11:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3486,10 +3486,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 57021,
+                    "id": 44431,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "8561:7:100",
+                    "src": "8561:7:25",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -3499,13 +3499,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 57024,
+                  "id": 44434,
                   "mutability": "mutable",
                   "name": "asset",
-                  "nameLocation": "8582:5:100",
+                  "nameLocation": "8582:5:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 57029,
-                  "src": "8574:13:100",
+                  "scope": 44439,
+                  "src": "8574:13:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3513,10 +3513,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 57023,
+                    "id": 44433,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "8574:7:100",
+                    "src": "8574:7:25",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -3526,21 +3526,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "8560:28:100"
+              "src": "8560:28:25"
             },
             "returnParameters": {
-              "id": 57028,
+              "id": 44438,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 57027,
+                  "id": 44437,
                   "mutability": "mutable",
                   "name": "withdrawals_",
-                  "nameLocation": "8620:12:100",
+                  "nameLocation": "8620:12:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 57029,
-                  "src": "8612:20:100",
+                  "scope": 44439,
+                  "src": "8612:20:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3548,10 +3548,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 57026,
+                    "id": 44436,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "8612:7:100",
+                    "src": "8612:7:25",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -3560,22 +3560,22 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "8611:22:100"
+              "src": "8611:22:25"
             },
-            "scope": 57105,
+            "scope": 44515,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
-            "id": 57037,
+            "id": 44447,
             "nodeType": "FunctionDefinition",
-            "src": "9138:51:100",
+            "src": "9138:51:25",
             "nodes": [],
             "documentation": {
-              "id": 57030,
+              "id": 44440,
               "nodeType": "StructuredDocumentation",
-              "src": "8944:189:100",
+              "src": "8944:189:25",
               "text": "  @dev   Function to set a value in the contract, called by the admin.\n  @param what The identifier for the value to be set.\n  @param data The value to be set."
             },
             "functionSelector": "d4e8be83",
@@ -3583,20 +3583,20 @@
             "kind": "function",
             "modifiers": [],
             "name": "file",
-            "nameLocation": "9147:4:100",
+            "nameLocation": "9147:4:25",
             "parameters": {
-              "id": 57035,
+              "id": 44445,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 57032,
+                  "id": 44442,
                   "mutability": "mutable",
                   "name": "what",
-                  "nameLocation": "9160:4:100",
+                  "nameLocation": "9160:4:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 57037,
-                  "src": "9152:12:100",
+                  "scope": 44447,
+                  "src": "9152:12:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3604,10 +3604,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 57031,
+                    "id": 44441,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "9152:7:100",
+                    "src": "9152:7:25",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -3617,13 +3617,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 57034,
+                  "id": 44444,
                   "mutability": "mutable",
                   "name": "data",
-                  "nameLocation": "9174:4:100",
+                  "nameLocation": "9174:4:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 57037,
-                  "src": "9166:12:100",
+                  "scope": 44447,
+                  "src": "9166:12:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3631,10 +3631,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 57033,
+                    "id": 44443,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "9166:7:100",
+                    "src": "9166:7:25",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -3644,28 +3644,28 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "9151:28:100"
+              "src": "9151:28:25"
             },
             "returnParameters": {
-              "id": 57036,
+              "id": 44446,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "9188:0:100"
+              "src": "9188:0:25"
             },
-            "scope": 57105,
+            "scope": 44515,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
-            "id": 57043,
+            "id": 44453,
             "nodeType": "FunctionDefinition",
-            "src": "9650:59:100",
+            "src": "9650:59:25",
             "nodes": [],
             "documentation": {
-              "id": 57038,
+              "id": 44448,
               "nodeType": "StructuredDocumentation",
-              "src": "9499:146:100",
+              "src": "9499:146:25",
               "text": "  @dev   Function to cancel a withdrawal request from a Arranger.\n  @param fundRequestId The ID of the withdrawal request."
             },
             "functionSelector": "933d9476",
@@ -3673,20 +3673,20 @@
             "kind": "function",
             "modifiers": [],
             "name": "cancelFundRequest",
-            "nameLocation": "9659:17:100",
+            "nameLocation": "9659:17:25",
             "parameters": {
-              "id": 57041,
+              "id": 44451,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 57040,
+                  "id": 44450,
                   "mutability": "mutable",
                   "name": "fundRequestId",
-                  "nameLocation": "9685:13:100",
+                  "nameLocation": "9685:13:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 57043,
-                  "src": "9677:21:100",
+                  "scope": 44453,
+                  "src": "9677:21:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3694,10 +3694,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 57039,
+                    "id": 44449,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "9677:7:100",
+                    "src": "9677:7:25",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -3706,28 +3706,28 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "9676:23:100"
+              "src": "9676:23:25"
             },
             "returnParameters": {
-              "id": 57042,
+              "id": 44452,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "9708:0:100"
+              "src": "9708:0:25"
             },
-            "scope": 57105,
+            "scope": 44515,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
-            "id": 57057,
+            "id": 44467,
             "nodeType": "FunctionDefinition",
-            "src": "10152:135:100",
+            "src": "10152:135:25",
             "nodes": [],
             "documentation": {
-              "id": 57044,
+              "id": 44454,
               "nodeType": "StructuredDocumentation",
-              "src": "9715:432:100",
+              "src": "9715:432:25",
               "text": "  @dev    Function to initiate a withdrawal request from a Arranger.\n  @param  ilk           The unique identifier for a particular ilk.\n  @param  asset         The asset to withdraw.\n  @param  amount        The amount of tokens to withdraw.\n  @param  info          Arbitrary string to provide additional info to the Arranger.\n  @return fundRequestId The ID of the withdrawal request."
             },
             "functionSelector": "d2543ccb",
@@ -3735,20 +3735,20 @@
             "kind": "function",
             "modifiers": [],
             "name": "requestFunds",
-            "nameLocation": "10161:12:100",
+            "nameLocation": "10161:12:25",
             "parameters": {
-              "id": 57053,
+              "id": 44463,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 57046,
+                  "id": 44456,
                   "mutability": "mutable",
                   "name": "ilk",
-                  "nameLocation": "10182:3:100",
+                  "nameLocation": "10182:3:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 57057,
-                  "src": "10174:11:100",
+                  "scope": 44467,
+                  "src": "10174:11:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3756,10 +3756,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 57045,
+                    "id": 44455,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "10174:7:100",
+                    "src": "10174:7:25",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -3769,13 +3769,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 57048,
+                  "id": 44458,
                   "mutability": "mutable",
                   "name": "asset",
-                  "nameLocation": "10195:5:100",
+                  "nameLocation": "10195:5:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 57057,
-                  "src": "10187:13:100",
+                  "scope": 44467,
+                  "src": "10187:13:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3783,10 +3783,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 57047,
+                    "id": 44457,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "10187:7:100",
+                    "src": "10187:7:25",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -3797,13 +3797,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 57050,
+                  "id": 44460,
                   "mutability": "mutable",
                   "name": "amount",
-                  "nameLocation": "10210:6:100",
+                  "nameLocation": "10210:6:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 57057,
-                  "src": "10202:14:100",
+                  "scope": 44467,
+                  "src": "10202:14:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3811,10 +3811,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 57049,
+                    "id": 44459,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "10202:7:100",
+                    "src": "10202:7:25",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -3824,13 +3824,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 57052,
+                  "id": 44462,
                   "mutability": "mutable",
                   "name": "info",
-                  "nameLocation": "10232:4:100",
+                  "nameLocation": "10232:4:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 57057,
-                  "src": "10218:18:100",
+                  "scope": 44467,
+                  "src": "10218:18:25",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -3838,10 +3838,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 57051,
+                    "id": 44461,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "10218:6:100",
+                    "src": "10218:6:25",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -3850,21 +3850,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "10173:64:100"
+              "src": "10173:64:25"
             },
             "returnParameters": {
-              "id": 57056,
+              "id": 44466,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 57055,
+                  "id": 44465,
                   "mutability": "mutable",
                   "name": "fundRequestId",
-                  "nameLocation": "10272:13:100",
+                  "nameLocation": "10272:13:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 57057,
-                  "src": "10264:21:100",
+                  "scope": 44467,
+                  "src": "10264:21:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3872,10 +3872,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 57054,
+                    "id": 44464,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "10264:7:100",
+                    "src": "10264:7:25",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -3884,22 +3884,22 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "10263:23:100"
+              "src": "10263:23:25"
             },
-            "scope": 57105,
+            "scope": 44515,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
-            "id": 57065,
+            "id": 44475,
             "nodeType": "FunctionDefinition",
-            "src": "10889:59:100",
+            "src": "10889:59:25",
             "nodes": [],
             "documentation": {
-              "id": 57058,
+              "id": 44468,
               "nodeType": "StructuredDocumentation",
-              "src": "10597:287:100",
+              "src": "10597:287:25",
               "text": " @notice Draw funds from the contract to the Arranger.\n @dev    Only the Arranger is authorized to call this function.\n @param  asset  The ERC20 token contract address from which funds are being drawn.\n @param  amount The amount of tokens to be drawn."
             },
             "functionSelector": "8a11329d",
@@ -3907,20 +3907,20 @@
             "kind": "function",
             "modifiers": [],
             "name": "drawFunds",
-            "nameLocation": "10898:9:100",
+            "nameLocation": "10898:9:25",
             "parameters": {
-              "id": 57063,
+              "id": 44473,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 57060,
+                  "id": 44470,
                   "mutability": "mutable",
                   "name": "asset",
-                  "nameLocation": "10916:5:100",
+                  "nameLocation": "10916:5:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 57065,
-                  "src": "10908:13:100",
+                  "scope": 44475,
+                  "src": "10908:13:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3928,10 +3928,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 57059,
+                    "id": 44469,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "10908:7:100",
+                    "src": "10908:7:25",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -3942,13 +3942,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 57062,
+                  "id": 44472,
                   "mutability": "mutable",
                   "name": "amount",
-                  "nameLocation": "10931:6:100",
+                  "nameLocation": "10931:6:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 57065,
-                  "src": "10923:14:100",
+                  "scope": 44475,
+                  "src": "10923:14:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3956,10 +3956,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 57061,
+                    "id": 44471,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "10923:7:100",
+                    "src": "10923:7:25",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -3968,28 +3968,28 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "10907:31:100"
+              "src": "10907:31:25"
             },
             "returnParameters": {
-              "id": 57064,
+              "id": 44474,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "10947:0:100"
+              "src": "10947:0:25"
             },
-            "scope": 57105,
+            "scope": 44515,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
-            "id": 57073,
+            "id": 44483,
             "nodeType": "FunctionDefinition",
-            "src": "11254:77:100",
+            "src": "11254:77:25",
             "nodes": [],
             "documentation": {
-              "id": 57066,
+              "id": 44476,
               "nodeType": "StructuredDocumentation",
-              "src": "10954:295:100",
+              "src": "10954:295:25",
               "text": " @notice Return funds (principal only) from the Arranger back to the contract.\n @dev    Only the Arranger is authorized to call this function.\n @param  fundRequestId The ID of the withdrawal request.\n @param  amount        The amount of tokens to be returned."
             },
             "functionSelector": "37cd2f7e",
@@ -3997,20 +3997,20 @@
             "kind": "function",
             "modifiers": [],
             "name": "returnFunds",
-            "nameLocation": "11263:11:100",
+            "nameLocation": "11263:11:25",
             "parameters": {
-              "id": 57071,
+              "id": 44481,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 57068,
+                  "id": 44478,
                   "mutability": "mutable",
                   "name": "fundRequestId",
-                  "nameLocation": "11283:13:100",
+                  "nameLocation": "11283:13:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 57073,
-                  "src": "11275:21:100",
+                  "scope": 44483,
+                  "src": "11275:21:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -4018,10 +4018,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 57067,
+                    "id": 44477,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "11275:7:100",
+                    "src": "11275:7:25",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -4031,13 +4031,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 57070,
+                  "id": 44480,
                   "mutability": "mutable",
                   "name": "amount",
-                  "nameLocation": "11306:6:100",
+                  "nameLocation": "11306:6:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 57073,
-                  "src": "11298:14:100",
+                  "scope": 44483,
+                  "src": "11298:14:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -4045,10 +4045,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 57069,
+                    "id": 44479,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "11298:7:100",
+                    "src": "11298:7:25",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -4057,28 +4057,28 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "11274:39:100"
+              "src": "11274:39:25"
             },
             "returnParameters": {
-              "id": 57072,
+              "id": 44482,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "11330:0:100"
+              "src": "11330:0:25"
             },
-            "scope": 57105,
+            "scope": 44515,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
-            "id": 57081,
+            "id": 44491,
             "nodeType": "FunctionDefinition",
-            "src": "11881:85:100",
+            "src": "11881:85:25",
             "nodes": [],
             "documentation": {
-              "id": 57074,
+              "id": 44484,
               "nodeType": "StructuredDocumentation",
-              "src": "11641:235:100",
+              "src": "11641:235:25",
               "text": "  @dev    Function to get the amount of funds that can be drawn by the Arranger.\n  @param  asset          The asset to check.\n  @return drawableFunds_ The amount of funds that can be drawn by the Arranger."
             },
             "functionSelector": "f9cc6b6f",
@@ -4086,20 +4086,20 @@
             "kind": "function",
             "modifiers": [],
             "name": "drawableFunds",
-            "nameLocation": "11890:13:100",
+            "nameLocation": "11890:13:25",
             "parameters": {
-              "id": 57077,
+              "id": 44487,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 57076,
+                  "id": 44486,
                   "mutability": "mutable",
                   "name": "asset",
-                  "nameLocation": "11912:5:100",
+                  "nameLocation": "11912:5:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 57081,
-                  "src": "11904:13:100",
+                  "scope": 44491,
+                  "src": "11904:13:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -4107,10 +4107,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 57075,
+                    "id": 44485,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "11904:7:100",
+                    "src": "11904:7:25",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -4120,21 +4120,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "11903:15:100"
+              "src": "11903:15:25"
             },
             "returnParameters": {
-              "id": 57080,
+              "id": 44490,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 57079,
+                  "id": 44489,
                   "mutability": "mutable",
                   "name": "drawableFunds_",
-                  "nameLocation": "11950:14:100",
+                  "nameLocation": "11950:14:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 57081,
-                  "src": "11942:22:100",
+                  "scope": 44491,
+                  "src": "11942:22:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -4142,10 +4142,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 57078,
+                    "id": 44488,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "11942:7:100",
+                    "src": "11942:7:25",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -4154,22 +4154,22 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "11941:24:100"
+              "src": "11941:24:25"
             },
-            "scope": 57105,
+            "scope": 44515,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
-            "id": 57090,
+            "id": 44500,
             "nodeType": "FunctionDefinition",
-            "src": "12192:110:100",
+            "src": "12192:110:25",
             "nodes": [],
             "documentation": {
-              "id": 57082,
+              "id": 44492,
               "nodeType": "StructuredDocumentation",
-              "src": "11972:215:100",
+              "src": "11972:215:25",
               "text": "  @dev    Returns a FundRequest struct at a given fundRequestId.\n  @param  fundRequestId The id of the fund request.\n  @return fundRequest   The FundRequest struct at the fundRequestId."
             },
             "functionSelector": "4dfa8434",
@@ -4177,20 +4177,20 @@
             "kind": "function",
             "modifiers": [],
             "name": "getFundRequest",
-            "nameLocation": "12201:14:100",
+            "nameLocation": "12201:14:25",
             "parameters": {
-              "id": 57085,
+              "id": 44495,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 57084,
+                  "id": 44494,
                   "mutability": "mutable",
                   "name": "fundRequestId",
-                  "nameLocation": "12224:13:100",
+                  "nameLocation": "12224:13:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 57090,
-                  "src": "12216:21:100",
+                  "scope": 44500,
+                  "src": "12216:21:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -4198,10 +4198,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 57083,
+                    "id": 44493,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "12216:7:100",
+                    "src": "12216:7:25",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -4210,66 +4210,66 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "12215:23:100"
+              "src": "12215:23:25"
             },
             "returnParameters": {
-              "id": 57089,
+              "id": 44499,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 57088,
+                  "id": 44498,
                   "mutability": "mutable",
                   "name": "fundRequest",
-                  "nameLocation": "12289:11:100",
+                  "nameLocation": "12289:11:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 57090,
-                  "src": "12270:30:100",
+                  "scope": 44500,
+                  "src": "12270:30:25",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_FundRequest_$56933_memory_ptr",
+                    "typeIdentifier": "t_struct$_FundRequest_$44343_memory_ptr",
                     "typeString": "struct IArrangerConduit.FundRequest"
                   },
                   "typeName": {
-                    "id": 57087,
+                    "id": 44497,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 57086,
+                      "id": 44496,
                       "name": "FundRequest",
                       "nameLocations": [
-                        "12270:11:100"
+                        "12270:11:25"
                       ],
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 56933,
-                      "src": "12270:11:100"
+                      "referencedDeclaration": 44343,
+                      "src": "12270:11:25"
                     },
-                    "referencedDeclaration": 56933,
-                    "src": "12270:11:100",
+                    "referencedDeclaration": 44343,
+                    "src": "12270:11:25",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_FundRequest_$56933_storage_ptr",
+                      "typeIdentifier": "t_struct$_FundRequest_$44343_storage_ptr",
                       "typeString": "struct IArrangerConduit.FundRequest"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "12269:32:100"
+              "src": "12269:32:25"
             },
-            "scope": 57105,
+            "scope": 44515,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
-            "id": 57096,
+            "id": 44506,
             "nodeType": "FunctionDefinition",
-            "src": "12457:84:100",
+            "src": "12457:84:25",
             "nodes": [],
             "documentation": {
-              "id": 57091,
+              "id": 44501,
               "nodeType": "StructuredDocumentation",
-              "src": "12308:144:100",
+              "src": "12308:144:25",
               "text": " @dev    Returns the length of the fundRequests array.\n @return fundRequestsLength The length of the fundRequests array."
             },
             "functionSelector": "d5c2db14",
@@ -4277,26 +4277,26 @@
             "kind": "function",
             "modifiers": [],
             "name": "getFundRequestsLength",
-            "nameLocation": "12466:21:100",
+            "nameLocation": "12466:21:25",
             "parameters": {
-              "id": 57092,
+              "id": 44502,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "12487:2:100"
+              "src": "12487:2:25"
             },
             "returnParameters": {
-              "id": 57095,
+              "id": 44505,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 57094,
+                  "id": 44504,
                   "mutability": "mutable",
                   "name": "fundRequestsLength",
-                  "nameLocation": "12521:18:100",
+                  "nameLocation": "12521:18:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 57096,
-                  "src": "12513:26:100",
+                  "scope": 44506,
+                  "src": "12513:26:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -4304,10 +4304,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 57093,
+                    "id": 44503,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "12513:7:100",
+                    "src": "12513:7:25",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -4316,22 +4316,22 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "12512:28:100"
+              "src": "12512:28:25"
             },
-            "scope": 57105,
+            "scope": 44515,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
-            "id": 57104,
+            "id": 44514,
             "nodeType": "FunctionDefinition",
-            "src": "12801:88:100",
+            "src": "12801:88:25",
             "nodes": [],
             "documentation": {
-              "id": 57097,
+              "id": 44507,
               "nodeType": "StructuredDocumentation",
-              "src": "12547:249:100",
+              "src": "12547:249:25",
               "text": "  @dev    Function to check if a withdrawal request can be cancelled.\n  @param  fundRequestId  The ID of the withdrawal request.\n  @return isCancelable_  True if the withdrawal request can be cancelled, false otherwise."
             },
             "functionSelector": "4857501f",
@@ -4339,20 +4339,20 @@
             "kind": "function",
             "modifiers": [],
             "name": "isCancelable",
-            "nameLocation": "12810:12:100",
+            "nameLocation": "12810:12:25",
             "parameters": {
-              "id": 57100,
+              "id": 44510,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 57099,
+                  "id": 44509,
                   "mutability": "mutable",
                   "name": "fundRequestId",
-                  "nameLocation": "12831:13:100",
+                  "nameLocation": "12831:13:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 57104,
-                  "src": "12823:21:100",
+                  "scope": 44514,
+                  "src": "12823:21:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -4360,10 +4360,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 57098,
+                    "id": 44508,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "12823:7:100",
+                    "src": "12823:7:25",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -4372,21 +4372,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "12822:23:100"
+              "src": "12822:23:25"
             },
             "returnParameters": {
-              "id": 57103,
+              "id": 44513,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 57102,
+                  "id": 44512,
                   "mutability": "mutable",
                   "name": "isCancelable_",
-                  "nameLocation": "12874:13:100",
+                  "nameLocation": "12874:13:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 57104,
-                  "src": "12869:18:100",
+                  "scope": 44514,
+                  "src": "12869:18:25",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -4394,10 +4394,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 57101,
+                    "id": 44511,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "12869:4:100",
+                    "src": "12869:4:25",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -4406,9 +4406,9 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "12868:20:100"
+              "src": "12868:20:25"
             },
-            "scope": 57105,
+            "scope": 44515,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
@@ -4418,50 +4418,50 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 56872,
+              "id": 44282,
               "name": "IAllocatorConduit",
               "nameLocations": [
-                "563:17:100"
+                "563:17:25"
               ],
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 566,
-              "src": "563:17:100"
+              "referencedDeclaration": 67,
+              "src": "563:17:25"
             },
-            "id": 56873,
+            "id": 44283,
             "nodeType": "InheritanceSpecifier",
-            "src": "563:17:100"
+            "src": "563:17:25"
           }
         ],
         "canonicalName": "IArrangerConduit",
         "contractDependencies": [],
         "contractKind": "interface",
         "documentation": {
-          "id": 56871,
+          "id": 44281,
           "nodeType": "StructuredDocumentation",
-          "src": "171:361:100",
+          "src": "171:361:25",
           "text": "  @title IArrangerConduit\n  @dev   Conduits are to be used to manage positions for multiple Allocators.\n         After funds are deposited into a Conduit, they can be deployed by Arrangers to earn\n         yield. When Allocators want funds back, they can request funds from the Arrangers and\n         then withdraw once liquidity is available."
         },
         "fullyImplemented": false,
         "linearizedBaseContracts": [
-          57105,
-          566
+          44515,
+          67
         ],
         "name": "IArrangerConduit",
-        "nameLocation": "543:16:100",
-        "scope": 57106,
+        "nameLocation": "543:16:25",
+        "scope": 44516,
         "usedErrors": [],
         "usedEvents": [
-          512,
-          523,
-          56880,
-          56885,
-          56892,
-          56905,
-          56918
+          13,
+          24,
+          44290,
+          44295,
+          44302,
+          44315,
+          44328
         ]
       }
     ],
     "license": "AGPL-3.0-or-later"
   },
-  "id": 100
+  "id": 25
 }
