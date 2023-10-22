@@ -96,7 +96,7 @@ contract HomeLoanProtocolTest is Test {
         vm.prank(address(borrower));
         uint256 newPrincipal = homeLoanStrategyImplementation.makePaymentForLoan(address(borrower), 1 ether);
         console.log("home loan payment received from borrower. New Principal value with interest: ", newPrincipal);
-
+        // borrower tests
         vm.warp(1697988529);
         console.log("warp to 1697988529");
         vm.prank(address(borrower));
