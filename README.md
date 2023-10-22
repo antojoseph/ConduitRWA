@@ -1,12 +1,19 @@
 # RWA-conduits
 
-3 files, HomeLoanProtocol, HomeLoanStrategy, and the HomeLoanProtocol.t.sol test. Essentially conduit will enable deposit to yield bearing strategy. Home Loan Strategy is one of them which is essentially allowing RWA review and loan to be granted by the conduit . So the test has, depositing to the conduit, DAO allows and creates a new loan for some amount. There’s a predefined interest rate and when they make payments for loan, it’ll calculate new principal. When someone withdraws from the conduit, the 2% interest rate is calculated and given back. Main test is this test_new_loan_with_full_payment_and_withdrawal
+    Conduit will enable deposit to yield bearing strategy. 
+    Home Loan Strategy is one of them which allows RWA review and loan to be granted by the conduit . 
+    So the test has
+        depositing to the conduit, 
+        DAO allows and creates a new loan for some amount. 
+        There’s a predefined interest rate and when they make payments for loan, it’ll calculate new principal. 
+        When someone withdraws from the conduit, the 2% interest rate is calculated and given back.
+        Main test is `test_new_loan_with_full_payment_and_withdrawal`
 
 
 
 Please run as 
 
-forge test 
+`forge test`
 
 
 install dependencies via forge install
