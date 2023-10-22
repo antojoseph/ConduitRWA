@@ -54,7 +54,9 @@ contract HomeLoanProtocol is IAllocatorConduit {
 
 
     function maxDeposit(bytes32 ilk, address asset) external view returns (uint256 maxDeposit_){
+        // returns max value
         return homeLoan.maxValueOfLoan(asset);
+
     }
 
 
