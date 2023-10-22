@@ -19,10 +19,10 @@ Please run as
 install dependencies via forge install
 
 
-Tests here : https://github.com/antojoseph/ConduitRWA/blob/main/test/arranger-conduit/HomeLoanProtocol.t.sol
+Tests: https://github.com/antojoseph/ConduitRWA/blob/main/test/arranger-conduit/HomeLoanProtocol.t.sol
 
-Home Loan protocol here : https://github.com/antojoseph/ConduitRWA/blob/main/src/HomeLoanProtocol.sol
+Home Loan protocol: https://github.com/antojoseph/ConduitRWA/blob/main/src/HomeLoanProtocol.sol
 
-Home Loan stratergy protocol here : https://github.com/antojoseph/ConduitRWA/blob/main/src/HomeLoanStrategy.sol
+Home Loan stratergy: https://github.com/antojoseph/ConduitRWA/blob/main/src/HomeLoanStrategy.sol
 
-Integrating with contract here : https://github.com/antojoseph/ConduitRWA/blob/fa6abe55fffe24575dc8abadc9cb453110746b1e/test/arranger-conduit/HomeLoanProtocol.t.sol#L29
+Integrating with contracts: https://github.com/antojoseph/ConduitRWA/blob/fa6abe55fffe24575dc8abadc9cb453110746b1e/test/arranger-conduit/HomeLoanProtocol.t.sol#L29
