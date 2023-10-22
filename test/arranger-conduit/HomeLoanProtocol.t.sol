@@ -42,7 +42,6 @@ contract HomeLoanProtocolTest is Test {
         vm.prank(lender1);
         asset.approve(address(homeLoanStrategyImplementation), 200);
         vm.prank(lender1);
-        // asset.approve(address(homeLoanProtocolImplementation), 10);
         // vm.prank(lender1);
         homeLoanProtocolImplementation.deposit('0xilk', address(asset), 200);
         console.log("The Loan strategy balance", asset.balanceOf(address(homeLoanStrategyImplementation)));
